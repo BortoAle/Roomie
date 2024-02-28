@@ -13,12 +13,12 @@ struct ContentView: View {
     
     @State private var showingMyRoommates = false
     @State private var openedSheetSize: Double = 0
-        
+    
     var body: some View {
         NavigationStack {
             VStack {
-				if let house = appState.selectedHouse{
-					ActivitiesView(house: house)
+                if let house = appState.selectedHouse{
+                    ActivitiesView(house: house)
                 } else {
                     ContentUnavailableView("No Houses", systemImage: "house.fill", description: Text("Create a new house"))
                 }
@@ -40,7 +40,7 @@ struct ContentView: View {
                 MyRoommatesView()
                     .onAppearUpdateHeight($openedSheetSize)
                     .presentationDetents([.large])
-                    }
+            }
         )
         
     }
@@ -49,4 +49,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(\.managedObjectContext, CoreDataStack.shared.persistentContainer.viewContext)
+        .environment(AppState())
 }

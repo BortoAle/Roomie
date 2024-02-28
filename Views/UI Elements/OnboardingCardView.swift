@@ -26,7 +26,7 @@ struct OnboardingCardView: View {
                         .font(.system(size: iconSize))
                         .fontWeight(.medium)
                 )
-
+            
             VStack(alignment: .leading){
                 Text(headerText)
                     .fontWeight(.bold)

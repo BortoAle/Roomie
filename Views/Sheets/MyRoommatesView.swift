@@ -168,4 +168,6 @@ struct MyRoommatesView: View {
 
 #Preview {
     MyRoommatesView()
+        .environment(\.managedObjectContext, CoreDataStack.shared.persistentContainer.viewContext)
+        .environment(AppState())
 }

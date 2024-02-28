@@ -52,7 +52,7 @@ struct ActivityCardView: View {
                 Toggle("", isOn: $checked)
                     .toggleStyle(CheckboxToggleStyle(style: .circle))
             }
-
+            
         }
         .opacity(checked ? 0.4 : 1)
     }
