@@ -1,0 +1,97 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "Add house" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TEMP Add house"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TEMP Add house"
+          }
+        }
+      }
+    },
+    "Ask the creator of your group to send you an invitation link" : {
+
+    },
+    "Close" : {
+
+    },
+    "Create a new house" : {
+
+    },
+    "Days active" : {
+
+    },
+    "Del" : {
+
+    },
+    "Delete" : {
+
+    },
+    "Do you want to delete this activity completely?" : {
+
+    },
+    "Edit" : {
+
+    },
+    "Edit activity" : {
+
+    },
+    "Enter activity name" : {
+
+    },
+    "Houses" : {
+
+    },
+    "It’s not your Activity" : {
+
+    },
+    "Name of activity" : {
+
+    },
+    "New activity" : {
+
+    },
+    "No Houses" : {
+
+    },
+    "Placeholder" : {
+
+    },
+    "Share" : {
+
+    },
+    "This is an house description" : {
+
+    },
+    "Today" : {
+
+    },
+    "Welcome to the Roommates App" : {
+
+    },
+    "What rooms do you have?" : {
+
+    },
+    "What trash do you sort?" : {
+
+    },
+    "x" : {
+
+    },
+    "You can't undo this action." : {
+
+    }
+  },
+  "version" : "1.0"
+}

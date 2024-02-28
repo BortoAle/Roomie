@@ -22,8 +22,11 @@ struct DaySelectionView: View {
     }
     
     var days: [DayData] {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.current
+        
         let weekdaySymbols = Calendar.current.standaloneWeekdaySymbols
-        let initialWeekdaySymbols = Calendar.current.veryShortWeekdaySymbols
+        let initialWeekdaySymbols = formatter.veryShortWeekdaySymbols!
         
         // Rearrange the arrays to start from the first weekday
         let rearrangedWeekdaySymbols = Array(weekdaySymbols[firstWeekday-1 ..< weekdaySymbols.count] + weekdaySymbols[0 ..< firstWeekday-1])
