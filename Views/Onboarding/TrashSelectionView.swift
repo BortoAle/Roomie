@@ -31,7 +31,7 @@ struct TrashSelectionView: View {
                     ForEach(viewModel.trashSelectionCards){
                         roomSelectionCard in
                         
-                        RoomSelectionCardView(roomName: roomSelectionCard.trashName, roomEmoji: roomSelectionCard.trashEmoji, dominantColor: roomSelectionCard.dominantColor)
+                        RoomSelectionCardView(roomName: roomSelectionCard.trashName, roomEmoji: roomSelectionCard.trashEmoji)
                     }
                 }
                 

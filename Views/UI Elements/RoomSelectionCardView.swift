@@ -11,24 +11,23 @@ struct RoomSelectionCardView: View {
     
     var roomName: String
     var roomEmoji: String
-    var dominantColor: Color
     
     @State var isSelected = false
     
     var body: some View {
         
         HStack{
-            ZStack{
-                Circle()
-                    .frame(minWidth: 0, maxWidth: 50, minHeight: 0, maxHeight: 50)
-                    .foregroundColor(.white)
-                Circle()
-                    .frame(minWidth: 0, maxWidth: 50, minHeight: 0, maxHeight: 50)
-                    .foregroundColor(dominantColor)
-                    .opacity(0.2)
-                Text(roomEmoji)
-                
-            }.clipped()
+            Text(roomEmoji)
+                .font(.title2)
+                .padding(.all, 10)
+                .background(
+                    ZStack{
+                        Color(.white)
+                        
+                        Color(getPastelColor(roomEmoji)).opacity(0.3)
+                    }
+                )
+                .clipShape(Circle())
             
             VStack (alignment: .leading){
                 Text(roomName)

@@ -31,7 +31,7 @@ struct RoomSelectionView: View {
                         ForEach(viewModel.roomSelectionCards){
                             roomSelectionCard in
                             
-                            RoomSelectionCardView(roomName: roomSelectionCard.roomName, roomEmoji: roomSelectionCard.roomEmoji, dominantColor: roomSelectionCard.dominantColor)
+                            RoomSelectionCardView(roomName: roomSelectionCard.roomName, roomEmoji: roomSelectionCard.roomEmoji)
                         }
                     }
                     RectangularButton(

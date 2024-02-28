@@ -12,5 +12,4 @@ struct TrashSelectionCard: Identifiable{
     var id: UUID = UUID()
     var trashName: String
     var trashEmoji: String
-    var dominantColor: Color
 }
