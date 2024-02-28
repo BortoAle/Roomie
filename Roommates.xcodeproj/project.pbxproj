@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1584C82B85161E00AFA7DB /* ActivityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1584C72B85161E00AFA7DB /* ActivityCardView.swift */; };
+		1A1584CF2B852C9D00AFA7DB /* MyRoommatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1584CE2B852C9D00AFA7DB /* MyRoommatesView.swift */; };
+		1A4BB36E2B84B8B1003B40DC /* RectangularButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB36A2B84B8B1003B40DC /* RectangularButtonView.swift */; };
+		1A4BB36F2B84B8B1003B40DC /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB36B2B84B8B1003B40DC /* OnboardingCardView.swift */; };
+		1A4BB3702B84B8B1003B40DC /* JoinGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB36C2B84B8B1003B40DC /* JoinGroupView.swift */; };
+		1A4BB3712B84B8B1003B40DC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB36D2B84B8B1003B40DC /* OnboardingView.swift */; };
+		1A4BB37E2B84BB1D003B40DC /* ChatGPTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB3782B84BB1D003B40DC /* ChatGPTRequest.swift */; };
+		1A4BB37F2B84BB1D003B40DC /* RandomHashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB3792B84BB1D003B40DC /* RandomHashView.swift */; };
+		1A4BB3802B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */; };
+		1A4BB3812B84BB1D003B40DC /* LoadTxtFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB37C2B84BB1D003B40DC /* LoadTxtFile.swift */; };
+		1A4BB3822B84BB1D003B40DC /* GetEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB37D2B84BB1D003B40DC /* GetEmojiView.swift */; };
+		1ACD8B412B873E0F004AAABE /* ColorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACD8B402B873E0F004AAABE /* ColorKit */; };
+		1ACD8B432B876267004AAABE /* PastelColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD8B422B876267004AAABE /* PastelColor.swift */; };
+		1AF630A52B88A89D00FD9938 /* SheetAdaptiveSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF630A42B88A89D00FD9938 /* SheetAdaptiveSize.swift */; };
+		6A188DE52B888F02001B21F1 /* Roomie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A188DE32B888F02001B21F1 /* Roomie.xcdatamodeld */; };
+		6A188E0E2B88A602001B21F1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188E0D2B88A602001B21F1 /* AppState.swift */; };
+		6A188E102B88A871001B21F1 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */; };
+		6A3202002B8E4C3400CBDC36 /* House+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3201FF2B8E4C3400CBDC36 /* House+Ext.swift */; };
+		6A3202022B8E4C8100CBDC36 /* Activity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3202012B8E4C8100CBDC36 /* Activity+Ext.swift */; };
+		6AEA950D2B7E0C4E0063B760 /* RoommatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */; };
+		6AEA950F2B7E0C4E0063B760 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA950E2B7E0C4E0063B760 /* ContentView.swift */; };
+		6AEA95112B7E0C4F0063B760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA95102B7E0C4F0063B760 /* Assets.xcassets */; };
+		6AF5FEC22B8DEDC000BE5B60 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5FEC12B8DEDC000BE5B60 /* CoreDataStack.swift */; };
+		6AF5FEC42B8DEE7500BE5B60 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5FEC32B8DEE7500BE5B60 /* ShareController.swift */; };
+		6AF5FEC62B8DEEF800BE5B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5FEC52B8DEEF800BE5B60 /* AppDelegate.swift */; };
+		6AF5FEC82B8DEF0300BE5B60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5FEC72B8DEF0300BE5B60 /* SceneDelegate.swift */; };
+		BE56914E2B7F536A0014EE9A /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE56914D2B7F536A0014EE9A /* AddActivityView.swift */; };
+		BE5691502B7F6B970014EE9A /* DaySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE56914F2B7F6B970014EE9A /* DaySelectionView.swift */; };
+		BE5691522B836B280014EE9A /* EditActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5691512B836B280014EE9A /* EditActivityView.swift */; };
+		BE5691542B836C6E0014EE9A /* NotYourActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5691532B836C6E0014EE9A /* NotYourActivityView.swift */; };
+		BE5691592B8377440014EE9A /* ExitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5691582B8377440014EE9A /* ExitButtonView.swift */; };
+		CC9C036E2B860C0E006FBDA2 /* TrashSelectionCard Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C036D2B860C0E006FBDA2 /* TrashSelectionCard Model.swift */; };
+		CC9C03702B860C2B006FBDA2 /* TrashSelectionCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C036F2B860C2B006FBDA2 /* TrashSelectionCardViewModel.swift */; };
+		CC9C03722B860DF5006FBDA2 /* TrashSelectionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C03712B860DF5006FBDA2 /* TrashSelectionCardView.swift */; };
+		CC9C03742B860E21006FBDA2 /* TrashSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C03732B860E21006FBDA2 /* TrashSelectionView.swift */; };
+		CCA6C3022B85EEAC00AA3102 /* RoomSelectionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6C3012B85EEAC00AA3102 /* RoomSelectionCardView.swift */; };
+		CCA6C3042B85F64B00AA3102 /* RoomSelectionCard Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6C3032B85F64B00AA3102 /* RoomSelectionCard Model.swift */; };
+		CCA6C3082B85F80D00AA3102 /* RoomSelectionCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6C3072B85F80D00AA3102 /* RoomSelectionCardViewModel.swift */; };
+		CCFFE42A2B84C20C00195CAD /* RoomSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFFE4292B84C20C00195CAD /* RoomSelectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A1584C72B85161E00AFA7DB /* ActivityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCardView.swift; sourceTree = "<group>"; };
+		1A1584CE2B852C9D00AFA7DB /* MyRoommatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoommatesView.swift; sourceTree = "<group>"; };
+		1A4BB36A2B84B8B1003B40DC /* RectangularButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularButtonView.swift; sourceTree = "<group>"; };
+		1A4BB36B2B84B8B1003B40DC /* OnboardingCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
+		1A4BB36C2B84B8B1003B40DC /* JoinGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGroupView.swift; sourceTree = "<group>"; };
+		1A4BB36D2B84B8B1003B40DC /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1A4BB3782B84BB1D003B40DC /* ChatGPTRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTRequest.swift; sourceTree = "<group>"; };
+		1A4BB3792B84BB1D003B40DC /* RandomHashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomHashView.swift; sourceTree = "<group>"; };
+		1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChatGPT_Instruction_Text_To_Emoji.txt; sourceTree = "<group>"; };
+		1A4BB37C2B84BB1D003B40DC /* LoadTxtFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTxtFile.swift; sourceTree = "<group>"; };
+		1A4BB37D2B84BB1D003B40DC /* GetEmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEmojiView.swift; sourceTree = "<group>"; };
+		1ACD8B422B876267004AAABE /* PastelColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelColor.swift; sourceTree = "<group>"; };
+		1AF630A42B88A89D00FD9938 /* SheetAdaptiveSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAdaptiveSize.swift; sourceTree = "<group>"; };
+		6A188DE42B888F02001B21F1 /* Roomie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Roomie.xcdatamodel; sourceTree = "<group>"; };
+		6A188E092B889096001B21F1 /* Roommates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Roommates.entitlements; path = Roommates/Roommates.entitlements; sourceTree = "<group>"; };
+		6A188E0A2B8890A1001B21F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Roommates/Info.plist; sourceTree = "<group>"; };
+		6A188E0D2B88A602001B21F1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
+		6A3201FF2B8E4C3400CBDC36 /* House+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "House+Ext.swift"; sourceTree = "<group>"; };
+		6A3202012B8E4C8100CBDC36 /* Activity+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+Ext.swift"; sourceTree = "<group>"; };
+		6AEA95092B7E0C4E0063B760 /* Roommates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roommates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommatesApp.swift; sourceTree = "<group>"; };
+		6AEA950E2B7E0C4E0063B760 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6AEA95102B7E0C4F0063B760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Roommates/Assets.xcassets; sourceTree = "<group>"; };
+		6AF5FEC12B8DEDC000BE5B60 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6AF5FEC32B8DEE7500BE5B60 /* ShareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
+		6AF5FEC52B8DEEF800BE5B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AF5FEC72B8DEF0300BE5B60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BE56914D2B7F536A0014EE9A /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
+		BE56914F2B7F6B970014EE9A /* DaySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectionView.swift; sourceTree = "<group>"; };
+		BE5691512B836B280014EE9A /* EditActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityView.swift; sourceTree = "<group>"; };
+		BE5691532B836C6E0014EE9A /* NotYourActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotYourActivityView.swift; sourceTree = "<group>"; };
+		BE5691582B8377440014EE9A /* ExitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButtonView.swift; sourceTree = "<group>"; };
+		CC9C036D2B860C0E006FBDA2 /* TrashSelectionCard Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrashSelectionCard Model.swift"; sourceTree = "<group>"; };
+		CC9C036F2B860C2B006FBDA2 /* TrashSelectionCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashSelectionCardViewModel.swift; sourceTree = "<group>"; };
+		CC9C03712B860DF5006FBDA2 /* TrashSelectionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashSelectionCardView.swift; sourceTree = "<group>"; };
+		CC9C03732B860E21006FBDA2 /* TrashSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashSelectionView.swift; sourceTree = "<group>"; };
+		CCA6C3012B85EEAC00AA3102 /* RoomSelectionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectionCardView.swift; sourceTree = "<group>"; };
+		CCA6C3032B85F64B00AA3102 /* RoomSelectionCard Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomSelectionCard Model.swift"; sourceTree = "<group>"; };
+		CCA6C3072B85F80D00AA3102 /* RoomSelectionCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectionCardViewModel.swift; sourceTree = "<group>"; };
+		CCFFE4292B84C20C00195CAD /* RoomSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AEA95062B7E0C4E0063B760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACD8B412B873E0F004AAABE /* ColorKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A1584C92B85293400AFA7DB /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BE5691582B8377440014EE9A /* ExitButtonView.swift */,
+				1A4BB36A2B84B8B1003B40DC /* RectangularButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		1A1584CA2B85296C00AFA7DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A4BB3682B84B8B1003B40DC /* Onboarding */,
+				1A4BB3692B84B8B1003B40DC /* UI Elements */,
+				1A4BB3742B84B9D7003B40DC /* Sheets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A4BB3682B84B8B1003B40DC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1A4BB36C2B84B8B1003B40DC /* JoinGroupView.swift */,
+				1A4BB36D2B84B8B1003B40DC /* OnboardingView.swift */,
+				CCFFE4292B84C20C00195CAD /* RoomSelectionView.swift */,
+				CC9C03732B860E21006FBDA2 /* TrashSelectionView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1A4BB3692B84B8B1003B40DC /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				1A1584C92B85293400AFA7DB /* Buttons */,
+				1A4BB36B2B84B8B1003B40DC /* OnboardingCardView.swift */,
+				CCA6C3012B85EEAC00AA3102 /* RoomSelectionCardView.swift */,
+				CC9C03712B860DF5006FBDA2 /* TrashSelectionCardView.swift */,
+				BE56914F2B7F6B970014EE9A /* DaySelectionView.swift */,
+				1A1584C72B85161E00AFA7DB /* ActivityCardView.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		1A4BB3742B84B9D7003B40DC /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				BE56914D2B7F536A0014EE9A /* AddActivityView.swift */,
+				BE5691512B836B280014EE9A /* EditActivityView.swift */,
+				BE5691532B836C6E0014EE9A /* NotYourActivityView.swift */,
+				1A1584CE2B852C9D00AFA7DB /* MyRoommatesView.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		1A4BB3772B84BB1D003B40DC /* TEMP Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A4BB3792B84BB1D003B40DC /* RandomHashView.swift */,
+				1A4BB37D2B84BB1D003B40DC /* GetEmojiView.swift */,
+			);
+			path = "TEMP Views";
+			sourceTree = "<group>";
+		};
+		1A4BB37A2B84BB1D003B40DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1ACD8B442B8762E9004AAABE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1ACD8B422B876267004AAABE /* PastelColor.swift */,
+				1A4BB3782B84BB1D003B40DC /* ChatGPTRequest.swift */,
+				1A4BB37C2B84BB1D003B40DC /* LoadTxtFile.swift */,
+				1AF630A42B88A89D00FD9938 /* SheetAdaptiveSize.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		6A188DE22B888E9E001B21F1 /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				6A188DE32B888F02001B21F1 /* Roomie.xcdatamodeld */,
+				6AF5FEC12B8DEDC000BE5B60 /* CoreDataStack.swift */,
+				6AF5FEC32B8DEE7500BE5B60 /* ShareController.swift */,
+				6A188E0D2B88A602001B21F1 /* AppState.swift */,
+				6AF5FEC52B8DEEF800BE5B60 /* AppDelegate.swift */,
+				6AF5FEC72B8DEF0300BE5B60 /* SceneDelegate.swift */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
+		6AEA95002B7E0C4E0063B760 = {
+			isa = PBXGroup;
+			children = (
+				6A188E0A2B8890A1001B21F1 /* Info.plist */,
+				6A188E092B889096001B21F1 /* Roommates.entitlements */,
+				6AEA95102B7E0C4F0063B760 /* Assets.xcassets */,
+				6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */,
+				6AEA950E2B7E0C4E0063B760 /* ContentView.swift */,
+				6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */,
+				6A188DE22B888E9E001B21F1 /* Sharing */,
+				CCA6C3062B85F7D400AA3102 /* ViewModels */,
+				CCA6C3052B85F66300AA3102 /* Models */,
+				1A1584CA2B85296C00AFA7DB /* Views */,
+				1ACD8B442B8762E9004AAABE /* Support Files */,
+				1A4BB37A2B84BB1D003B40DC /* Resources */,
+				1A4BB3772B84BB1D003B40DC /* TEMP Views */,
+				6AEA950A2B7E0C4E0063B760 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AEA950A2B7E0C4E0063B760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AEA95092B7E0C4E0063B760 /* Roommates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCA6C3052B85F66300AA3102 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6C3032B85F64B00AA3102 /* RoomSelectionCard Model.swift */,
+				CC9C036D2B860C0E006FBDA2 /* TrashSelectionCard Model.swift */,
+				6A3201FF2B8E4C3400CBDC36 /* House+Ext.swift */,
+				6A3202012B8E4C8100CBDC36 /* Activity+Ext.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCA6C3062B85F7D400AA3102 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6C3072B85F80D00AA3102 /* RoomSelectionCardViewModel.swift */,
+				CC9C036F2B860C2B006FBDA2 /* TrashSelectionCardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AEA95082B7E0C4E0063B760 /* Roommates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AEA95172B7E0C4F0063B760 /* Build configuration list for PBXNativeTarget "Roommates" */;
+			buildPhases = (
+				6AEA95052B7E0C4E0063B760 /* Sources */,
+				6AEA95062B7E0C4E0063B760 /* Frameworks */,
+				6AEA95072B7E0C4E0063B760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Roommates;
+			packageProductDependencies = (
+				1ACD8B402B873E0F004AAABE /* ColorKit */,
+			);
+			productName = Roommates;
+			productReference = 6AEA95092B7E0C4E0063B760 /* Roommates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AEA95012B7E0C4E0063B760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					6AEA95082B7E0C4E0063B760 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 6AEA95042B7E0C4E0063B760 /* Build configuration list for PBXProject "Roommates" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = 6AEA95002B7E0C4E0063B760;
+			packageReferences = (
+				1ACD8B3F2B873E0F004AAABE /* XCRemoteSwiftPackageReference "ColorKit" */,
+			);
+			productRefGroup = 6AEA950A2B7E0C4E0063B760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AEA95082B7E0C4E0063B760 /* Roommates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AEA95072B7E0C4E0063B760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4BB3802B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt in Resources */,
+				6AEA95112B7E0C4F0063B760 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AEA95052B7E0C4E0063B760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF5FEC62B8DEEF800BE5B60 /* AppDelegate.swift in Sources */,
+				1A4BB36F2B84B8B1003B40DC /* OnboardingCardView.swift in Sources */,
+				1A4BB3812B84BB1D003B40DC /* LoadTxtFile.swift in Sources */,
+				1A1584CF2B852C9D00AFA7DB /* MyRoommatesView.swift in Sources */,
+				CC9C03742B860E21006FBDA2 /* TrashSelectionView.swift in Sources */,
+				CCA6C3082B85F80D00AA3102 /* RoomSelectionCardViewModel.swift in Sources */,
+				6A3202022B8E4C8100CBDC36 /* Activity+Ext.swift in Sources */,
+				1A4BB37F2B84BB1D003B40DC /* RandomHashView.swift in Sources */,
+				6AF5FEC82B8DEF0300BE5B60 /* SceneDelegate.swift in Sources */,
+				6AF5FEC22B8DEDC000BE5B60 /* CoreDataStack.swift in Sources */,
+				BE5691542B836C6E0014EE9A /* NotYourActivityView.swift in Sources */,
+				BE5691592B8377440014EE9A /* ExitButtonView.swift in Sources */,
+				CCA6C3042B85F64B00AA3102 /* RoomSelectionCard Model.swift in Sources */,
+				BE5691502B7F6B970014EE9A /* DaySelectionView.swift in Sources */,
+				1AF630A52B88A89D00FD9938 /* SheetAdaptiveSize.swift in Sources */,
+				BE56914E2B7F536A0014EE9A /* AddActivityView.swift in Sources */,
+				6AEA950F2B7E0C4E0063B760 /* ContentView.swift in Sources */,
+				6AF5FEC42B8DEE7500BE5B60 /* ShareController.swift in Sources */,
+				1A4BB37E2B84BB1D003B40DC /* ChatGPTRequest.swift in Sources */,
+				CC9C036E2B860C0E006FBDA2 /* TrashSelectionCard Model.swift in Sources */,
+				CC9C03702B860C2B006FBDA2 /* TrashSelectionCardViewModel.swift in Sources */,
+				6A188E102B88A871001B21F1 /* ActivitiesView.swift in Sources */,
+				1A4BB3702B84B8B1003B40DC /* JoinGroupView.swift in Sources */,
+				6AEA950D2B7E0C4E0063B760 /* RoommatesApp.swift in Sources */,
+				1A1584C82B85161E00AFA7DB /* ActivityCardView.swift in Sources */,
+				6A188DE52B888F02001B21F1 /* Roomie.xcdatamodeld in Sources */,
+				6A188E0E2B88A602001B21F1 /* AppState.swift in Sources */,
+				1A4BB3822B84BB1D003B40DC /* GetEmojiView.swift in Sources */,
+				1A4BB36E2B84B8B1003B40DC /* RectangularButtonView.swift in Sources */,
+				BE5691522B836B280014EE9A /* EditActivityView.swift in Sources */,
+				1A4BB3712B84B8B1003B40DC /* OnboardingView.swift in Sources */,
+				CCA6C3022B85EEAC00AA3102 /* RoomSelectionCardView.swift in Sources */,
+				1ACD8B432B876267004AAABE /* PastelColor.swift in Sources */,
+				6A3202002B8E4C3400CBDC36 /* House+Ext.swift in Sources */,
+				CCFFE42A2B84C20C00195CAD /* RoomSelectionView.swift in Sources */,
+				CC9C03722B860DF5006FBDA2 /* TrashSelectionCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6AEA95152B7E0C4F0063B760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AEA95162B7E0C4F0063B760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AEA95182B7E0C4F0063B760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Roommates/Roommates.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = ZPG82D37U3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Roommates/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.undefined.Roomie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6AEA95192B7E0C4F0063B760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Roommates/Roommates.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = ZPG82D37U3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Roommates/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.undefined.Roomie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AEA95042B7E0C4E0063B760 /* Build configuration list for PBXProject "Roommates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AEA95152B7E0C4F0063B760 /* Debug */,
+				6AEA95162B7E0C4F0063B760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AEA95172B7E0C4F0063B760 /* Build configuration list for PBXNativeTarget "Roommates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AEA95182B7E0C4F0063B760 /* Debug */,
+				6AEA95192B7E0C4F0063B760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1ACD8B3F2B873E0F004AAABE /* XCRemoteSwiftPackageReference "ColorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boris-Em/ColorKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ACD8B402B873E0F004AAABE /* ColorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ACD8B3F2B873E0F004AAABE /* XCRemoteSwiftPackageReference "ColorKit" */;
+			productName = ColorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6A188DE32B888F02001B21F1 /* Roomie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A188DE42B888F02001B21F1 /* Roomie.xcdatamodel */,
+			);
+			currentVersion = 6A188DE42B888F02001B21F1 /* Roomie.xcdatamodel */;
+			path = Roomie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6AEA95012B7E0C4E0063B760 /* Project object */;
+}
