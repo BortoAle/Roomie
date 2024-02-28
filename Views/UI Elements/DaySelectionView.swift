@@ -7,27 +7,38 @@
 
 import SwiftUI
 
-struct DayData: Identifiable {
-    let id = UUID()
+struct DayData: Hashable {
     let name: String
     let initial: String
+    let weekdayID: Int
 }
 
 struct DaySelectionView: View {
     @Environment(\.colorScheme) var colorScheme
-    @Binding var selectedDays: [String]
+    @Binding var selectedDays: [Int]
+    
+    var firstWeekday: Int {
+        Calendar.current.firstWeekday
+    }
     
     var days: [DayData] {
-        _ = Locale.current
         let weekdaySymbols = Calendar.current.standaloneWeekdaySymbols
-        return weekdaySymbols.enumerated().map { (index, name) in
-            return DayData(name: name, initial: Calendar.current.veryShortWeekdaySymbols[index])
-        }
+        let initialWeekdaySymbols = Calendar.current.veryShortWeekdaySymbols
+        
+        // Rearrange the arrays to start from the first weekday
+        let rearrangedWeekdaySymbols = Array(weekdaySymbols[firstWeekday-1 ..< weekdaySymbols.count] + weekdaySymbols[0 ..< firstWeekday-1])
+        let rearrangedInitialSymbols = Array(initialWeekdaySymbols[firstWeekday-1 ..< initialWeekdaySymbols.count] + initialWeekdaySymbols[0 ..< firstWeekday-1])
+        
+        return Array(zip(rearrangedWeekdaySymbols, rearrangedInitialSymbols).enumerated().map { (index, pair) in
+            let (name, initial) = pair
+            let weekdayIndex = (firstWeekday + index - 1) % 7
+            return DayData(name: name, initial: initial, weekdayID: weekdayIndex)
+        })
     }
     
     var body: some View {
         HStack{
-            ForEach(days, id: \.id) { day in
+            ForEach(days, id: \.self) { day in
                 SingleDayButton(selectedDays: $selectedDays, day: day)
             }
         }
@@ -40,20 +51,20 @@ struct DaySelectionView: View {
 }
 
 struct SingleDayButton: View {
-    @Binding var selectedDays: [String]
+    @Binding var selectedDays: [Int]
     var day: DayData
     
     var body: some View {
         
         Button(
             action:{
-                if selectedDays.contains(day.name) {
+                if selectedDays.contains(day.weekdayID) {
                     withAnimation(){
-                        selectedDays.removeAll { $0 == day.name }
+                        selectedDays.removeAll { $0 == day.weekdayID }
                     }
                 } else {
                     withAnimation(){
-                        selectedDays.append(day.name)
+                        selectedDays.append(day.weekdayID)
                     }
                     
                 }
@@ -67,7 +78,7 @@ struct SingleDayButton: View {
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(
-                    Color(selectedDays.contains(day.name) ? .accentColor : Color.secondary.opacity(0.3))
+                    Color(selectedDays.contains(day.weekdayID) ? .accentColor : Color.secondary.opacity(0.3))
                 )
                 .clipShape(Circle())
                 .overlay(

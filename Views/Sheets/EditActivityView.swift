@@ -13,7 +13,7 @@ struct EditActivityView: View {
 	
     @State private var showingAlert = false
     @State private var activityName: String = ""
-    @State private var selectedDays: [String] = []
+    @State private var selectedDays: [Int] = []
 	let activity: Activity
     
     var body: some View {

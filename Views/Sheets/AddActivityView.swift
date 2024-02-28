@@ -14,7 +14,7 @@ struct AddActivityView: View {
     
     @State private var activityName: String = ""
     @FocusState private var fieldIsFocused: Bool
-    @State private var selectedDays: [String] = []
+    @State private var selectedDays: [Int] = []
     
     var body: some View {
         VStack (alignment: .leading){
