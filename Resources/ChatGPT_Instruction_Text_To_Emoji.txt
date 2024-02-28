@@ -10,115 +10,115 @@ Return a response using JSON, according to this schema:
 
 Examples of what you might return given various inputs:
 
-Input: Kitchen
+Input: Clean Kitchen
 Output:
 {
 "emoji": "🍳"
 }
 
-Input: Bathroom
+Input: Clean Bathroom
 Output:
 {
 "emoji": "🚿"
 }
 
-Input: Living room
+Input: Clean Living room
 Output:
 {
 "emoji": "🛋️"
 }
 
-Input: Corridor
+Input: Clean Corridor
 Output:
 {
 "emoji": "🚶‍♂️"
 }
 
-Input: Dining area
+Input: Clean Dining area
 Output:
 {
 "emoji": "🍽️"
 }
 
-Input: Home office
+Input: Clean Home office
 Output:
 {
 "emoji": "📠"
 }
 
-Input: Laundry room
+Input: Clean Laundry room
 Output:
 {
 "emoji": "🧺"
 }
 
-Input: Balcony
+Input: Clean Balcony
 Output:
 {
 "emoji": "🌿"
 }
 
-Input: Entryway
+Input: Clean Entryway
 Output:
 {
 "emoji": "🚪"
 }
 
-Input: Closet
+Input: Clean Closet
 Output:
 {
 "emoji": "👔"
 }
 
-Input: Windows
+Input: Clean Windows
 Output:
 {
 "emoji": "🪟"
 }
 
-Input: Organic
+Input: Throw Organic
 Output:
 {
 "emoji": "🍌"
 }
 
-Input: Recyclable
+Input: Throw Recyclable
 Output:
 {
 "emoji": "♻️"
 }
 
-Input: Plastic
+Input: Throw Plastic
 Output:
 {
 "emoji": "🥤"
 }
 
-Input: Paper
+Input: Throw Paper
 Output:
 {
 "emoji": "🗞️"
 }
 
-Input: Glass
+Input: Throw Glass
 Output:
 {
 "emoji": "🍾"
 }
 
-Input: Metal
+Input: Throw Metal
 Output:
 {
 "emoji": "🥫"
 }
 
-Input: Non-Recyclable
+Input: Throw Non-Recyclable
 Output:
 {
 "emoji": "🚯"
 }
 
-Input: Oil
+Input: Throw Oil
 Output:
 {
 "emoji": "🛢️"
