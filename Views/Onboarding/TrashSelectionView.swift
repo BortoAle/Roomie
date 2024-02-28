@@ -10,47 +10,46 @@ import SwiftUI
 struct TrashSelectionView: View {
     
     var viewModel = TrashSelectionCardViewModel()
+    @State var amountOfCardsAdded: Int = 0
     
     var body: some View {
-        
-        ZStack{
-            
-            VStack {
-                HStack {
-                    Text("What trash do you sort?")
-                    //                        .fontWeight(.semibold)
-                        .bold()
-                        .font(.title2)
-                        .padding(.leading, 20)
-                        .padding(.top, 20)
-                        .padding(.bottom, 30)
-                    Spacer()
-                }
+        NavigationStack{
+            VStack(alignment: .leading){
+                Text("What trash do you sort?")
+                    .bold()
+                    .font(.title2)
+                    .padding()
                 
-                VStack(spacing: 28){
-                    ForEach(viewModel.trashSelectionCards){
-                        roomSelectionCard in
-                        
-                        RoomSelectionCardView(roomName: roomSelectionCard.trashName, roomEmoji: roomSelectionCard.trashEmoji)
+                ScrollView{
+                    VStack{
+                        ForEach(viewModel.trashSelectionCards){
+                            roomSelectionCard in
+                            
+                            RoomSelectionCardView(roomName: roomSelectionCard.trashName, roomEmoji: roomSelectionCard.trashEmoji, amountOfCardsAdded: $amountOfCardsAdded)
+                        }
                     }
+                    .padding(.horizontal)
                 }
                 
                 RectangularButton(
-                    text: "Continue",
-                    color: .accentColor
+                    text: amountOfCardsAdded == 0 ? "Skip for now" : "Continue",
+                    color: amountOfCardsAdded == 0 ? .namaraGray : .accentColor
                 )
                 .padding(.horizontal)
                 .padding(.top)
+                .overlay(
+                    NavigationLink(destination: ContentView()) {
+                        Color.clear
+                    }
+                )
             }
-            
-            
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                .neroGray
+            )
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            .neroGray
-        )
+        .navigationBarBackButtonHidden(true)
     }
-    
 }
 
 #Preview {

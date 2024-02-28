@@ -11,12 +11,13 @@ struct RoomSelectionCardView: View {
     
     var roomName: String
     var roomEmoji: String
+    @Binding var amountOfCardsAdded: Int
     
     @State var isSelected = false
     
     var body: some View {
         
-        HStack{
+        HStack(spacing: 15){
             Text(roomEmoji)
                 .font(.title2)
                 .padding(.all, 10)
@@ -32,29 +33,42 @@ struct RoomSelectionCardView: View {
             VStack (alignment: .leading){
                 Text(roomName)
                     .font(.headline)
-                    .bold()
+                    .fontWeight(.bold)
             }
-            .frame(minWidth: 0,maxWidth: .infinity, maxHeight:.infinity, alignment:.leading)
             
-            Button(action: {withAnimation{isSelected.toggle()}}, label: {
+            Spacer()
+            
+            Button(action: {
+                withAnimation{
+                    isSelected.toggle()
+                }
+                
+                if isSelected{
+                    amountOfCardsAdded+=1
+                }
+                else{
+                    amountOfCardsAdded-=1
+                }
+            }, label: {
                 Image(systemName: isSelected ? "plus.circle.fill" : "plus.circle")
                     .font(.title2)
                     .foregroundColor(.white)
             })
             
         }
-        .frame(width: .infinity, height: 50)
-        .padding(.horizontal, 20)
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 8)
+        .padding(.horizontal)
         .background(
             RoundedRectangle(cornerRadius: 10)
-                .fill(.black)
-                .padding(-10)
-                .padding(.horizontal, 20)
+                .fill(.onboardingCardGray)
+            
+            
         )
         
     }
 }
 
 #Preview {
-    RoomSelectionView()
+    RoomSelectionCardView(roomName: "Test", roomEmoji: "❌", amountOfCardsAdded: .constant(0))
 }

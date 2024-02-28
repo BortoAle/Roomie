@@ -10,44 +10,43 @@ import SwiftUI
 struct RoomSelectionView: View {
     
     var viewModel = RoomSelectionCardViewModel()
+    @State var amountOfCardsAdded: Int = 0
     
     var body: some View {
-        
-        ZStack{
-            ScrollView{
-                VStack {
-                    HStack {
-                        Text("What rooms do you have?")
-                        //                        .fontWeight(.semibold)
-                            .bold()
-                            .font(.title2)
-                            .padding(.leading, 20)
-                            .padding(.top, 20)
-                            .padding(.bottom, 30)
-                        Spacer()
-                    }
-                    
-                    VStack(spacing: 28){
-                        ForEach(viewModel.roomSelectionCards){
-                            roomSelectionCard in
-                            
-                            RoomSelectionCardView(roomName: roomSelectionCard.roomName, roomEmoji: roomSelectionCard.roomEmoji)
+        NavigationStack{
+            VStack(alignment: .leading){
+                Text("What rooms do you have?")
+                    .bold()
+                    .font(.title2)
+                    .padding()
+                
+                ScrollView{
+                    VStack{
+                        ForEach(viewModel.roomSelectionCards){  roomSelectionCard in
+                            RoomSelectionCardView(roomName: roomSelectionCard.roomName, roomEmoji: roomSelectionCard.roomEmoji, amountOfCardsAdded: $amountOfCardsAdded)
                         }
                     }
-                    RectangularButton(
-                        text: "Continue",
-                        color: .accentColor
-                    )
                     .padding(.horizontal)
-                    .padding(.top)
                 }
+                
+                RectangularButton(
+                    text: amountOfCardsAdded == 0 ? "Skip for now" : "Continue",
+                    color: amountOfCardsAdded == 0 ? .namaraGray : .accentColor
+                )
+                .padding(.horizontal)
+                .padding(.top)
+                .overlay(
+                    NavigationLink(destination: TrashSelectionView()) {
+                        Color.clear
+                    }
+                )
             }
-            
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                .neroGray
+            )
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            .neroGray
-        )
+        .navigationBarBackButtonHidden(true)
     }
     
 }
