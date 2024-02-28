@@ -83,4 +83,6 @@ struct AddActivityView: View {
 
 #Preview {
     AddActivityView()
+        .environment(\.managedObjectContext, CoreDataStack.shared.persistentContainer.viewContext)
+        .environment(AppState())
 }

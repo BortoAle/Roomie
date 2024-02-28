@@ -16,6 +16,8 @@ struct EditActivityView: View {
     @State private var selectedDays: [Int] = []
 	let activity: Activity
     
+    private let stack = CoreDataStack.shared
+    
     var body: some View {
         VStack (alignment: .leading){
             HStack{
@@ -34,6 +36,9 @@ struct EditActivityView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .foregroundColor(.accentColor)
+                .onAppear(){
+                    activityName = activity.name ?? ""
+                }
             
             Divider()
                 .background(Color.secondary)
@@ -66,11 +71,16 @@ struct EditActivityView: View {
                 primaryButton: .cancel(),
                 secondaryButton: .destructive(
                     Text("Delete"),
-                    action: {}
+                    action: {deleteActivity()}
                 )
             )
         }
         
+    }
+    
+    private func deleteActivity() {
+        stack.deleteActivity(activity)
+        dismiss()
     }
 	
 	private func saveActivity() {
@@ -89,7 +99,7 @@ struct EditActivityView: View {
 	}
 }
 
-#Preview {
-	EditActivityView(activity: .mockup)
-		.environment(\.managedObjectContext, CoreDataStack.preview.context)
-}
+//#Preview {
+//	EditActivityView(activity: .mockup)
+//		.environment(\.managedObjectContext, CoreDataStack.preview.context)
+//}

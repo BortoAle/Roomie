@@ -34,15 +34,9 @@ struct ActivitiesView: View {
             List{
                 Section(){
                     ForEach(activities){ activity in
-                        ActivityCardView(activityName: activity.name ?? "N/A", activityEmoji: "😃", personName: "Matt Novoselov")
+                        ActivityCardView(activityName: activity.name ?? "N/A", activityEmoji: "😃", personName: "Name Placeholder")
                             .swipeActions {
                                 if canEdit(activity: activity) {
-                                    Button(role: .destructive) {
-                                        stack.deleteActivity(activity)
-                                    }
-                                label: {
-                                    Label("Delete", systemImage: "trash")
-                                }
                                     Button {
                                         editedActivity = activity
                                     }
