@@ -69,16 +69,20 @@ struct AddActivityView: View {
             newActivity.name = name
             
             ChatGPTRequest(inputPrompt: name) { result in
-                newActivity.emoji = result ?? "❌"
+                do {
+                    let emoji = result?.prefix(1).lowercased() ?? "❌"
+                    newActivity.emoji = emoji
+                    try viewContext.save()
+                } catch {
+                    print("Error: \(error)")
+                }
             }
-            
+
 			newActivity.house = appState.selectedHouse
             do {
                 try viewContext.save()
 				presentationMode.wrappedValue.dismiss()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }

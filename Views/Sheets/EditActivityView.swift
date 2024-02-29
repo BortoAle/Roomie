@@ -88,7 +88,13 @@ struct EditActivityView: View {
 			activity.name = activityName
             
             ChatGPTRequest(inputPrompt: activityName) { result in
-                activity.emoji = result ?? "❌"
+                do {
+                    let emoji = result?.prefix(1).lowercased() ?? "❌"
+                    activity.emoji = emoji
+                    try viewContext.save()
+                } catch {
+                    print("Error: \(error)")
+                }
             }
             
 			do {
@@ -103,8 +109,3 @@ struct EditActivityView: View {
 		}
 	}
 }
-
-//#Preview {
-//	EditActivityView(activity: .mockup)
-//		.environment(\.managedObjectContext, CoreDataStack.preview.context)
-//}

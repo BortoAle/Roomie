@@ -14,7 +14,7 @@ struct RoommatesApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var appState = AppState()
-	let container = CoreDataStack.shared.persistentContainer
+    let container = CoreDataStack.shared.persistentContainer
     
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
     
@@ -28,10 +28,9 @@ struct RoommatesApp: App {
                     ContentView()
                 }
             }
-            .overlay(ErrorScreen())
+            .preferredColorScheme(.dark)
             .environment(\.managedObjectContext, container.viewContext)
             .environment(appState)
-            .preferredColorScheme(.dark)
         }
     }
 }
