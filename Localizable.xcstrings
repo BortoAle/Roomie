@@ -5,6 +5,7 @@
 
     },
     "Add house" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -23,10 +24,10 @@
     "Ask the creator of your group to send you an invitation link" : {
 
     },
-    "Close" : {
+    "Create a new house" : {
 
     },
-    "Create a new house" : {
+    "Created by you" : {
 
     },
     "Days active" : {
@@ -38,25 +39,40 @@
     "Do you want to delete this activity completely?" : {
 
     },
+    "Do you want to delete this house completely?" : {
+
+    },
+    "Done" : {
+
+    },
     "Edit" : {
 
     },
     "Edit activity" : {
 
     },
+    "Edit house" : {
+
+    },
     "Enter activity name" : {
 
     },
-    "Houses" : {
+    "Enter house name" : {
 
     },
     "It’s not your Activity" : {
+
+    },
+    "My Houses" : {
 
     },
     "Name of activity" : {
 
     },
     "New activity" : {
+
+    },
+    "New house" : {
 
     },
     "No Houses" : {
@@ -66,9 +82,6 @@
 
     },
     "Share" : {
-
-    },
-    "This is an house description" : {
 
     },
     "Today" : {
@@ -84,6 +97,9 @@
 
     },
     "x" : {
+
+    },
+    "You are a participant" : {
 
     },
     "You can't undo this action." : {

@@ -28,7 +28,7 @@ struct ContentView: View {
                 ToolbarItem (placement: .navigationBarLeading){
                     
                     Button(action: { showingMyRoommates=true }, label: {
-                        Image(systemName: "person.2.fill")
+                        Image(systemName: "house.lodge.fill")
                             .fontWeight(.bold)
                     }).tint(.white)
                     
