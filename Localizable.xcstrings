@@ -4,25 +4,24 @@
     "" : {
 
     },
-    "Add house" : {
-      "extractionState" : "stale",
+    " " : {
+
+    },
+    "Ask the creator of your group to send you an invitation link" : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "TEMP Add house"
+            "value" : "TEMP Ask the creator of your group to send you an invitation link"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "TEMP Add house"
+            "value" : "TEMP Ask the creator of your group to send you an invitation link"
           }
         }
       }
-    },
-    "Ask the creator of your group to send you an invitation link" : {
-
     },
     "Create a new house" : {
 
@@ -78,9 +77,6 @@
     "Oups, there was an error:" : {
 
     },
-    "Placeholder" : {
-
-    },
     "Share" : {
 
     },
@@ -94,9 +90,6 @@
 
     },
     "What trash do you sort?" : {
-
-    },
-    "x" : {
 
     },
     "You are a participant" : {

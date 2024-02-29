@@ -74,7 +74,7 @@ struct SingleDayButton: View {
             }
         )
         {
-            Text("x")
+            Text(" ")
                 .foregroundColor(.clear)
                 .font(.title3)
                 .fontWeight(.bold)

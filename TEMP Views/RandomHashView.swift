@@ -14,7 +14,7 @@ struct RandomHashView: View {
     
     var body: some View {
         VStack{
-            TextField("Placeholder", text: $textField)
+            TextField("", text: $textField)
                 .onChange(of: textField){
                     let hash = textField.hash
                     let range = 0..<roommatesList.count
