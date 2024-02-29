@@ -97,20 +97,26 @@ struct MyRoommatesView: View {
 			.first?.windows
 			.filter { $0.isKeyWindow }.first
 		
-		let sharingController = UICloudSharingController {
-			(_, completion: @escaping (CKShare?, CKContainer?, Error?) -> Void) in
-			
-			stack.persistentContainer.share([house], to: nil) { _, share, container, error in
-				if let actualShare = share {
-					house.managedObjectContext?.performAndWait {
-						actualShare[CKShare.SystemFieldKey.title] = house.name
-					}
+		let shareContainer: (CKShare?, CKContainer?) = starSharing(house: house)
+		if let share = shareContainer.0, let container = shareContainer.1 {
+			let sharingController1 = UICloudSharingController(share: share, container: container)
+			keyWindow?.rootViewController?.present(sharingController1, animated: true)
+		}
+	}
+	
+	func starSharing(house: House) -> (CKShare?, CKContainer?) {
+		var newShare: CKShare?
+		var newContainer: CKContainer?
+		stack.persistentContainer.share([house], to: nil) { _, share, container, error in
+			if let actualShare = share {
+				house.managedObjectContext?.performAndWait {
+					actualShare[CKShare.SystemFieldKey.title] = house.name
+					newShare = share
+					newContainer = container
 				}
-				completion(share, container, error)
 			}
 		}
-		
-		keyWindow?.rootViewController?.present(sharingController, animated: true)
+		return(newShare, newContainer)
 	}
 	
 	private func isShared(house: House) -> Bool {
