@@ -15,6 +15,10 @@ struct ActivityCardView: View {
     
     @State var checked = false
     
+    @Environment(\.managedObjectContext) private var viewContext
+    let activity: Activity
+    private let stack = CoreDataStack.shared
+    
     var body: some View {
         HStack(spacing: 15){
             Text(activityEmoji)
@@ -50,17 +54,32 @@ struct ActivityCardView: View {
             
             if showingToggle{
                 Toggle("", isOn: $checked)
-                    .toggleStyle(CheckboxToggleStyle(style: .circle))
+                    .toggleStyle(CheckboxToggleStyle())
             }
             
         }
         .opacity(checked ? 0.4 : 1)
+        .onChange(of: checked){
+            saveActivity()
+        }
+    }
+    
+    private func saveActivity() {
+        withAnimation {
+            activity.isCompleted = checked
+            
+            do {
+                try viewContext.save()
+            } catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
     }
 }
 
 struct CheckboxToggleStyle: ToggleStyle {
     @Environment(\.isEnabled) var isEnabled
-    let style: Style
     
     func makeBody(configuration: Configuration) -> some View {
         Button(action: {
@@ -69,7 +88,7 @@ struct CheckboxToggleStyle: ToggleStyle {
             }
         }, label: {
             ZStack {
-                Image(systemName: configuration.isOn ? "checkmark.\(style.sfSymbolName).fill" : style.sfSymbolName)
+                Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
                     .imageScale(.large)
                     .foregroundColor(.white)
                     .fontWeight(.medium)
@@ -80,21 +99,4 @@ struct CheckboxToggleStyle: ToggleStyle {
         .disabled(!isEnabled)
         
     }
-    
-    enum Style {
-        case square, circle
-        
-        var sfSymbolName: String {
-            switch self {
-            case .square:
-                return "square"
-            case .circle:
-                return "circle"
-            }
-        }
-    }
-}
-
-#Preview {
-    ActivityCardView(activityName: "Clean Kitchen", activityEmoji: "🍳", personName: "Matt Novoselov")
 }
