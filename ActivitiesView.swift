@@ -34,7 +34,7 @@ struct ActivitiesView: View {
             List{
                 Section(){
                     ForEach(activities){ activity in
-                        ActivityCardView(activityName: activity.name ?? "N/A", activityEmoji: "😃", personName: "Name Placeholder")
+                        ActivityCardView(activityName: activity.name ?? "N/A", activityEmoji: activity.emoji ?? "📝", personName: "Name Placeholder")
                             .swipeActions {
                                 if canEdit(activity: activity) {
                                     Button {

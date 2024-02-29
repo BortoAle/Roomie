@@ -19,7 +19,6 @@
 		1A4BB37F2B84BB1D003B40DC /* RandomHashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB3792B84BB1D003B40DC /* RandomHashView.swift */; };
 		1A4BB3802B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */; };
 		1A4BB3812B84BB1D003B40DC /* LoadTxtFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB37C2B84BB1D003B40DC /* LoadTxtFile.swift */; };
-		1A4BB3822B84BB1D003B40DC /* GetEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB37D2B84BB1D003B40DC /* GetEmojiView.swift */; };
 		1AA8A9482B8F4BC8009CE473 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */; };
 		1ACD8B412B873E0F004AAABE /* ColorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACD8B402B873E0F004AAABE /* ColorKit */; };
 		1ACD8B432B876267004AAABE /* PastelColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD8B422B876267004AAABE /* PastelColor.swift */; };
@@ -67,7 +66,6 @@
 		1A4BB3792B84BB1D003B40DC /* RandomHashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomHashView.swift; sourceTree = "<group>"; };
 		1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChatGPT_Instruction_Text_To_Emoji.txt; sourceTree = "<group>"; };
 		1A4BB37C2B84BB1D003B40DC /* LoadTxtFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTxtFile.swift; sourceTree = "<group>"; };
-		1A4BB37D2B84BB1D003B40DC /* GetEmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEmojiView.swift; sourceTree = "<group>"; };
 		1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1ACD8B422B876267004AAABE /* PastelColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelColor.swift; sourceTree = "<group>"; };
 		1AD725FC2B90CEC90096327C /* ErrorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorScreen.swift; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				1A4BB3792B84BB1D003B40DC /* RandomHashView.swift */,
-				1A4BB37D2B84BB1D003B40DC /* GetEmojiView.swift */,
 			);
 			path = "TEMP Views";
 			sourceTree = "<group>";
@@ -377,7 +374,6 @@
 				1A1584C82B85161E00AFA7DB /* ActivityCardView.swift in Sources */,
 				6A188DE52B888F02001B21F1 /* Roomie.xcdatamodeld in Sources */,
 				6A188E0E2B88A602001B21F1 /* AppState.swift in Sources */,
-				1A4BB3822B84BB1D003B40DC /* GetEmojiView.swift in Sources */,
 				1A4BB36E2B84B8B1003B40DC /* RectangularButtonView.swift in Sources */,
 				BE5691522B836B280014EE9A /* EditActivityView.swift in Sources */,
 				1A4BB3712B84B8B1003B40DC /* OnboardingView.swift in Sources */,
@@ -519,7 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = ZPG82D37U3;
+				DEVELOPMENT_TEAM = GXDG2KXXXC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roommates/Info.plist;
@@ -536,7 +532,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.undefined.Roomie;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.novoselov.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -557,7 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = ZPG82D37U3;
+				DEVELOPMENT_TEAM = GXDG2KXXXC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roommates/Info.plist;
@@ -574,7 +570,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.undefined.Roomie;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.novoselov.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

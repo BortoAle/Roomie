@@ -86,6 +86,11 @@ struct EditActivityView: View {
 	private func saveActivity() {
 		withAnimation {
 			activity.name = activityName
+            
+            ChatGPTRequest(inputPrompt: activityName) { result in
+                activity.emoji = result ?? "❌"
+            }
+            
 			do {
 				try viewContext.save()
 				dismiss()

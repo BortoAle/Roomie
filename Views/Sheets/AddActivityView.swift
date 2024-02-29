@@ -67,6 +67,11 @@ struct AddActivityView: View {
         withAnimation {
             let newActivity = Activity(context: viewContext)
             newActivity.name = name
+            
+            ChatGPTRequest(inputPrompt: name) { result in
+                newActivity.emoji = result ?? "❌"
+            }
+            
 			newActivity.house = appState.selectedHouse
             do {
                 try viewContext.save()
