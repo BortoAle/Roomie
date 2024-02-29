@@ -11,13 +11,13 @@ import SwiftUI
 class TrashSelectionCardViewModel{
     
     var trashSelectionCards = [
-        TrashSelectionCard(trashName: "Plastic", trashEmoji: "🥤"),
-        TrashSelectionCard(trashName: "Paper", trashEmoji: "🗞️️"),
-        TrashSelectionCard(trashName: "Metal", trashEmoji: "🥫"),
-        TrashSelectionCard(trashName: "Organic", trashEmoji: "🍌"),
-        TrashSelectionCard(trashName: "Glass", trashEmoji: "🍾"),
-        TrashSelectionCard(trashName: "Recyclable", trashEmoji: "♻️"),
-        TrashSelectionCard(trashName: "Non-Recyclable", trashEmoji: "🚯"),
-        TrashSelectionCard(trashName: "Oil", trashEmoji: "🛢️️")
+        TrashSelectionCard(trashName: "Plastic", trashEmoji: "🥤", activityName: "Throw Plastic"),
+        TrashSelectionCard(trashName: "Paper", trashEmoji: "🗞️️", activityName: "Throw Paper"),
+        TrashSelectionCard(trashName: "Metal", trashEmoji: "🥫", activityName: "Throw Metal"),
+        TrashSelectionCard(trashName: "Organic", trashEmoji: "🍌", activityName: "Throw Organic"),
+        TrashSelectionCard(trashName: "Glass", trashEmoji: "🍾", activityName: "Throw Glass"),
+        TrashSelectionCard(trashName: "Recyclable", trashEmoji: "♻️", activityName: "Throw Recyclable"),
+        TrashSelectionCard(trashName: "Non-Recyclable", trashEmoji: "🚯", activityName: "Throw Non-Recyclable"),
+        TrashSelectionCard(trashName: "Oil", trashEmoji: "🛢️️", activityName: "Throw Oil"),
     ]
 }

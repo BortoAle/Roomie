@@ -16,12 +16,22 @@ struct RoommatesApp: App {
     var appState = AppState()
 	let container = CoreDataStack.shared.persistentContainer
     
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-				.environment(\.managedObjectContext, container.viewContext)
-                .environment(appState)
-                .preferredColorScheme(.dark)
+            Group{
+                if isOnboarding{
+                    OnboardingView()
+                }
+                else{
+                    ContentView()
+                }
+            }
+            .overlay(ErrorScreen())
+            .environment(\.managedObjectContext, container.viewContext)
+            .environment(appState)
+            .preferredColorScheme(.dark)
         }
     }
 }

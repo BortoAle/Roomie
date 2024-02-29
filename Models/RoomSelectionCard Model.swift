@@ -12,4 +12,5 @@ struct RoomSelectionCard: Identifiable{
     var id: UUID = UUID()
     var roomName: String
     var roomEmoji: String
+    var activityName: String
 }

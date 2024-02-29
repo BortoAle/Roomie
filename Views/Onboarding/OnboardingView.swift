@@ -13,7 +13,7 @@ struct OnboardingView: View {
     var body: some View {
         NavigationStack{
             VStack{
-                Text("Welcome to the Roommates App")
+                Text("Welcome to Roomie")
                     .fontWeight(.semibold)
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)

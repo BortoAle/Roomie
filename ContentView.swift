@@ -5,7 +5,6 @@
 //  Created by Alessandro Bortoluzzi on 15/02/24.
 //
 
-// Hello, it's Maria
 import SwiftUI
 import CloudKit
 
@@ -14,6 +13,8 @@ struct ContentView: View {
     
     @State private var showingMyRoommates = false
     @State private var openedSheetSize: Double = 0
+    
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
     
     var body: some View {
         NavigationStack {
@@ -34,6 +35,10 @@ struct ContentView: View {
                     
                 }
             }
+        }
+        .navigationBarBackButtonHidden(true)
+        .onAppear(){
+            isOnboarding = false
         }
         .sheet(
             isPresented: $showingMyRoommates,

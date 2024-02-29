@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct RoomSelectionView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(AppState.self) var appState
+    
+    @State private var showingAddActivity = false
+    @State private var openedSheetSize: Double = 0
+    
+    @State private var suggestedAddActivityName: String = ""
     
     var viewModel = RoomSelectionCardViewModel()
     @State var amountOfCardsAdded: Int = 0
@@ -23,7 +30,15 @@ struct RoomSelectionView: View {
                 ScrollView{
                     VStack{
                         ForEach(viewModel.roomSelectionCards){  roomSelectionCard in
-                            RoomSelectionCardView(roomName: roomSelectionCard.roomName, roomEmoji: roomSelectionCard.roomEmoji, amountOfCardsAdded: $amountOfCardsAdded)
+                            RoomSelectionCardView(
+                                roomName: roomSelectionCard.roomName,
+                                roomEmoji: roomSelectionCard.roomEmoji,
+                                addAction: {
+                                    suggestedAddActivityName = roomSelectionCard.activityName
+                                    showingAddActivity=true
+                                },
+                                amountOfCardsAdded: $amountOfCardsAdded
+                            )
                         }
                     }
                     .padding(.horizontal)
@@ -33,6 +48,9 @@ struct RoomSelectionView: View {
                     text: amountOfCardsAdded == 0 ? "Skip for now" : "Continue",
                     color: amountOfCardsAdded == 0 ? .namaraGray : .accentColor
                 )
+                .onAppear(){
+                    addHouse()
+                }
                 .padding(.horizontal)
                 .padding(.top)
                 .overlay(
@@ -47,10 +65,35 @@ struct RoomSelectionView: View {
             )
         }
         .navigationBarBackButtonHidden(true)
+        .sheet(
+            isPresented: $showingAddActivity,
+            content: {
+                AddActivityView(activityName: suggestedAddActivityName)
+                    .onAppearUpdateHeight($openedSheetSize)
+                    .presentationDetents([.height(openedSheetSize)])
+            }
+        )
+    }
+
+    private func addHouse() {
+        withAnimation {
+            let newItem = House(context: viewContext)
+            newItem.name = "My House"
+            appState.selectedHouse = newItem
+            
+            do {
+                try viewContext.save()
+            } catch {
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
     }
     
 }
 
 #Preview {
     RoomSelectionView()
+        .environment(\.managedObjectContext, CoreDataStack.shared.persistentContainer.viewContext)
+        .environment(AppState())
 }

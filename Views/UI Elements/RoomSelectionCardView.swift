@@ -11,6 +11,7 @@ struct RoomSelectionCardView: View {
     
     var roomName: String
     var roomEmoji: String
+    var addAction: (() -> Void)? = nil
     @Binding var amountOfCardsAdded: Int
     
     @State var isSelected = false
@@ -45,9 +46,7 @@ struct RoomSelectionCardView: View {
                 
                 if isSelected{
                     amountOfCardsAdded+=1
-                }
-                else{
-                    amountOfCardsAdded-=1
+                    addAction?()
                 }
             }, label: {
                 Image(systemName: isSelected ? "plus.circle.fill" : "plus.circle")

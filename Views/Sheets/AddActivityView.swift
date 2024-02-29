@@ -12,7 +12,7 @@ struct AddActivityView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(AppState.self) var appState
     
-    @State private var activityName: String = ""
+    @State var activityName: String = ""
     @FocusState private var fieldIsFocused: Bool
     @State private var selectedDays: [Int] = []
     

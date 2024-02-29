@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct TrashSelectionView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(AppState.self) var appState
+    
+    @State private var showingAddActivity = false
+    @State private var openedSheetSize: Double = 0
+    
+    @State private var suggestedAddActivityName: String = ""
     
     var viewModel = TrashSelectionCardViewModel()
     @State var amountOfCardsAdded: Int = 0
@@ -23,9 +30,17 @@ struct TrashSelectionView: View {
                 ScrollView{
                     VStack{
                         ForEach(viewModel.trashSelectionCards){
-                            roomSelectionCard in
+                            trashSelectionCard in
                             
-                            RoomSelectionCardView(roomName: roomSelectionCard.trashName, roomEmoji: roomSelectionCard.trashEmoji, amountOfCardsAdded: $amountOfCardsAdded)
+                            RoomSelectionCardView(
+                                roomName: trashSelectionCard.trashName,
+                                roomEmoji: trashSelectionCard.trashEmoji,
+                                addAction: {
+                                    suggestedAddActivityName = trashSelectionCard.activityName
+                                    showingAddActivity=true
+                                },
+                                amountOfCardsAdded: $amountOfCardsAdded
+                            )
                         }
                     }
                     .padding(.horizontal)
@@ -49,9 +64,19 @@ struct TrashSelectionView: View {
             )
         }
         .navigationBarBackButtonHidden(true)
+        .sheet(
+            isPresented: $showingAddActivity,
+            content: {
+                AddActivityView(activityName: suggestedAddActivityName)
+                    .onAppearUpdateHeight($openedSheetSize)
+                    .presentationDetents([.height(openedSheetSize)])
+            }
+        )
     }
 }
 
 #Preview {
     TrashSelectionView()
+        .environment(\.managedObjectContext, CoreDataStack.shared.persistentContainer.viewContext)
+        .environment(AppState())
 }
