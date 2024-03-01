@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CloudKit
 
 struct ActivitiesView: View {
 	@State private var myFilter = false
@@ -19,10 +20,12 @@ struct ActivitiesView: View {
 	
 	@FetchRequest private var activities: FetchedResults<Activity>
 	@State private var editedActivity: Activity? = nil
+	private let share: CKShare?
 	
 	private let stack = CoreDataStack.shared
 	
 	init(house: House) {
+		share = stack.getShare(house)
 		_activities = FetchRequest(entity: Activity.entity(),
 								   sortDescriptors: [NSSortDescriptor(keyPath: \Activity.timestamp, ascending: false)],
 								   predicate: NSPredicate(format: "%K = %@", #keyPath(Activity.house), house),

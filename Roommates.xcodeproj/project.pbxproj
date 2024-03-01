@@ -32,6 +32,7 @@
 		6A188E102B88A871001B21F1 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */; };
 		6A3202002B8E4C3400CBDC36 /* House+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3201FF2B8E4C3400CBDC36 /* House+Ext.swift */; };
 		6A3202022B8E4C8100CBDC36 /* Activity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3202012B8E4C8100CBDC36 /* Activity+Ext.swift */; };
+		6AA03FC12B92426A0084F74B /* HouseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA03FC02B92426A0084F74B /* HouseCardView.swift */; };
 		6AEA950D2B7E0C4E0063B760 /* RoommatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */; };
 		6AEA950F2B7E0C4E0063B760 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA950E2B7E0C4E0063B760 /* ContentView.swift */; };
 		6AEA95112B7E0C4F0063B760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA95102B7E0C4F0063B760 /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
 		6A3201FF2B8E4C3400CBDC36 /* House+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "House+Ext.swift"; sourceTree = "<group>"; };
 		6A3202012B8E4C8100CBDC36 /* Activity+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+Ext.swift"; sourceTree = "<group>"; };
+		6AA03FC02B92426A0084F74B /* HouseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCardView.swift; sourceTree = "<group>"; };
 		6AEA95092B7E0C4E0063B760 /* Roommates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roommates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommatesApp.swift; sourceTree = "<group>"; };
 		6AEA950E2B7E0C4E0063B760 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				1A1584CE2B852C9D00AFA7DB /* MyRoommatesView.swift */,
 				1A12325E2B90852500AAA83D /* AddHouseView.swift */,
 				1A2A6D7B2B908C8900C31165 /* EditHouseView.swift */,
+				6AA03FC02B92426A0084F74B /* HouseCardView.swift */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				6A188E0E2B88A602001B21F1 /* AppState.swift in Sources */,
 				1A4BB36E2B84B8B1003B40DC /* RectangularButtonView.swift in Sources */,
 				BE5691522B836B280014EE9A /* EditActivityView.swift in Sources */,
+				6AA03FC12B92426A0084F74B /* HouseCardView.swift in Sources */,
 				1A4BB3712B84B8B1003B40DC /* OnboardingView.swift in Sources */,
 				CCA6C3022B85EEAC00AA3102 /* RoomSelectionCardView.swift in Sources */,
 				1ACD8B432B876267004AAABE /* PastelColor.swift in Sources */,
@@ -507,7 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = GXDG2KXXXC;
+				DEVELOPMENT_TEAM = GG2P3935JY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roommates/Info.plist;
@@ -524,7 +528,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.novoselov.Roomie;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bortoluzzi.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -545,7 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = GXDG2KXXXC;
+				DEVELOPMENT_TEAM = GG2P3935JY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roommates/Info.plist;
@@ -562,7 +566,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.novoselov.Roomie;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.bortoluzzi.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

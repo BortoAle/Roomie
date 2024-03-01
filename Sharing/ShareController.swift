@@ -2,7 +2,7 @@
 //  ShareController.swift
 //  ShareController
 //
-//  Created by Yang Xu on 2021/9/9.
+//  Created by Alessandro Bortoluzzi on 23/02/24.
 //
 
 import CloudKit
@@ -51,12 +51,10 @@ class CloudSharingCoordinator:NSObject,UICloudSharingControllerDelegate{
         guard let house = house else {return}
         if !stack.isOwner(object: house) {
             stack.deleteHouse(house)
-            print("删除本地共享数据")
+            print("Delete local shared data")
         }
         else {
-            // 应该处理掉ckshare,目前不起作用。已提交feedback，希望官方提供正式的恢复方式。
-            // 目前我的处理思路是，先对停止共享的托管对象（例如note）在本地进行Deep Copy（包含所有关系数据）
-            // 然后调用purgeObjectsAndRecordsInZone删除网络上的共享自定义Zone
+          // CKShare should be deleted
         }
     }
     static let shared = CloudSharingCoordinator()

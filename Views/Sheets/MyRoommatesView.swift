@@ -36,64 +36,22 @@ struct MyRoommatesView: View {
                 else{
                     List {
                         ForEach(houses) { house in
-                            Section {
-                                Button(action: {
-                                    appState.selectedHouse = house
-                                    dismiss()
-                                }, label: {
-                                    
-                                    HStack{
-                                        Image(systemName: "house.fill")
-                                            .font(.title2)
-                                            .foregroundStyle(.white)
-                                        
-                                        VStack(alignment: .leading){
-                                            Text(house.name ?? "N/A")
-                                                .font(.headline)
-                                            
-                                            if stack.isShared(object: house) {
-                                                if stack.isOwner(object: house) {
-                                                    Text("Created by you")
-                                                        .foregroundStyle(.gray)
-                                                } else {
-                                                    Text("You are a participant")
-                                                        .foregroundStyle(.gray)
-                                                }
-                                            }
-                                        }
-                                        .foregroundStyle(.white)
-                                        
-                                        Spacer()
-
-                                        Button(action: {
-                                            if isShared(house: house) {
-                                                sharingHouse = house
-                                            } else {
-                                                Task.detached {
-                                                    await createShare(house)
-                                                }
-                                            }
-                                        }, label: {
-                                            Label("Share", systemImage: "square.and.arrow.up")
-                                        })
-                                    }
-                                    .padding(.vertical)
-                                    
-                                })
-                                
-                            }
-                            .labelStyle(.iconOnly)
-                            .imageScale(.large)
-                            .swipeActions {
-                                Button {
-                                    editingHouse = house
-                                    showingEditHouseSheet = true
-                                }
-                            label: {
-                                Label("", systemImage: "slider.vertical.3")
-                            }
-                            .tint(.accentColor)
-                            }
+							HouseCardView(
+								house: house,
+								swipeAction: {
+									editingHouse = house
+									showingEditHouseSheet = true
+								},
+								shareAction: {
+									if isShared(house: house) {
+										sharingHouse = house
+									} else {
+										Task.detached {
+											await createShare(house)
+										}
+									}
+								}
+							)
                         }
                     }
                     .listSectionSpacing(.compact)

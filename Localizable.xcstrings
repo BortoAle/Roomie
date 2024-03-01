@@ -26,6 +26,9 @@
     "Create a new house" : {
 
     },
+    "Created by %@" : {
+
+    },
     "Created by you" : {
 
     },
@@ -90,9 +93,6 @@
 
     },
     "What trash do you sort?" : {
-
-    },
-    "You are a participant" : {
 
     },
     "You can't undo this action." : {

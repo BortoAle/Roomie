@@ -5,6 +5,7 @@
         <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="weekdays" optional="YES" attributeType="String"/>
         <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="House" inverseName="activities" inverseEntity="House"/>
     </entity>
     <entity name="House" representedClassName="House" syncable="YES" codeGenerationType="class">
