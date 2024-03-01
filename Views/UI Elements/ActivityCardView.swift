@@ -39,7 +39,7 @@ struct ActivityCardView: View {
                     Image(systemName: "person.fill")
                         .imageScale(.small)
                     
-					Text("TEMP Assigned")
+					Text(hashTaskExecutor(taskName: activity.name ?? "", roommatesList: ["Alessandro", "Matt", "Su", "Maria"]))
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
