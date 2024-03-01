@@ -8,34 +8,29 @@
 import SwiftUI
 
 struct ActivityCardView: View {
-    var activityName: String
-    var activityEmoji: String
-    var personName: String
-    var showingToggle: Bool = true
-    
-    @State var checked = false
-    
     @Environment(\.managedObjectContext) private var viewContext
     let activity: Activity
+	let showingToggle: Bool
+	@State var isToggled: Bool
     private let stack = CoreDataStack.shared
     
     var body: some View {
         HStack(spacing: 15){
-            Text(activityEmoji)
+			Text(activity.emoji ?? "📝")
                 .font(.title2)
                 .padding(.all, 10)
                 .background(
                     ZStack{
                         Color(.white)
                         
-                        Color(getPastelColor(activityEmoji)).opacity(0.3)
+						Color(getPastelColor(activity.emoji ?? "📝")).opacity(0.3)
                     }
                 )
                 .clipShape(Circle())
-                .saturation(checked ? 0.5 : 1)
+				.saturation(activity.isCompleted ? 0.5 : 1)
             
             VStack (alignment: .leading){
-                Text(activityName)
+				Text(activity.name ?? "")
                     .font(.headline)
                     .fontWeight(.bold)
                 
@@ -43,7 +38,7 @@ struct ActivityCardView: View {
                     Image(systemName: "person.fill")
                         .imageScale(.small)
                     
-                    Text(personName)
+					Text("TEMP Assigned")
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
@@ -52,22 +47,24 @@ struct ActivityCardView: View {
             }
             .frame(minWidth: 0, maxWidth: .infinity, maxHeight:.infinity, alignment:.leading)
             
-            if showingToggle{
-                Toggle("", isOn: $checked)
+			if showingToggle {
+				Toggle("", isOn: Binding(get: {
+					activity.isCompleted
+				}, set: { completionState in
+					activity.isCompleted = completionState
+				}))
                     .toggleStyle(CheckboxToggleStyle())
             }
             
         }
-        .opacity(checked ? 0.4 : 1)
-        .onChange(of: checked){
-            saveActivity()
-        }
+		.opacity(activity.isCompleted ? 0.4 : 1)
+		.onChange(of: activity.isCompleted) {
+			saveActivity()
+		}
     }
     
     private func saveActivity() {
         withAnimation {
-            activity.isCompleted = checked
-            
             do {
                 try viewContext.save()
             } catch {
