@@ -34,7 +34,7 @@ struct ActivitiesView: View {
 			List{
 				Section(){
 					ForEach(activities){ activity in
-						ActivityCardView(activity: activity, showingToggle: true, isToggled: activity.isCompleted)
+                        ActivityCardView(activity: activity, showingToggle: true, emoji: activity.emoji ?? "📝", isToggled: activity.isCompleted)
 							.swipeActions {
 								Button {
 									editedActivity = activity

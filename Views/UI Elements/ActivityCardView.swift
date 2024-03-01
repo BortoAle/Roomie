@@ -11,19 +11,20 @@ struct ActivityCardView: View {
     @Environment(\.managedObjectContext) private var viewContext
     let activity: Activity
 	let showingToggle: Bool
+    var emoji: String = "📝"
 	@State var isToggled: Bool
     private let stack = CoreDataStack.shared
     
     var body: some View {
         HStack(spacing: 15){
-			Text(activity.emoji ?? "📝")
+			Text(emoji)
                 .font(.title2)
                 .padding(.all, 10)
                 .background(
                     ZStack{
                         Color(.white)
                         
-						Color(getPastelColor(activity.emoji ?? "📝")).opacity(0.3)
+						Color(getPastelColor(emoji)).opacity(0.3)
                     }
                 )
                 .clipShape(Circle())
