@@ -12,7 +12,7 @@ struct OnboardingCardView: View {
     var descriptionText: String
     var iconName: String
     
-    let iconSize: CGFloat = 45
+    let iconSize: CGFloat = 40
     
     var body: some View {
         HStack(spacing: 20){
