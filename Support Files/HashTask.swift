@@ -16,13 +16,16 @@ func currentGMTDate() -> String {
 }
 
 func hashTaskExecutor(taskName: String, roommatesList:[String]) -> String {
+    if roommatesList.count == 0{
+        return "Name N/A"
+    }
+
     let formattedString = String("\(currentGMTDate()) \(taskName)")
-    print(formattedString)
     let hashValue = formattedString.hash
     let absHash = abs(hashValue)
     
-	// Map hash value to the range
-	let mappedValue = absHash % (0 - roommatesList.count+1)
+    // Map hash value to the range
+    let mappedValue = absHash % roommatesList.count
     
     let selectedRoommate = roommatesList[mappedValue]
     return selectedRoommate
