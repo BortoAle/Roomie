@@ -86,7 +86,7 @@ final class CoreDataStack {
         return container
     }()
 
-    let ckContainerID = "iCloud.com.example.icloudsharing"
+    let ckContainerID = "iCloud.com.undefined.Roomie"
 
     var ckContainer: CKContainer {
         CKContainer(identifier: ckContainerID)
