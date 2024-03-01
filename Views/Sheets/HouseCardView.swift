@@ -55,13 +55,13 @@ struct HouseCardView: View {
 							Label("Share", systemImage: "square.and.arrow.up")
 						})
 					}
-//					if let share {
-//						ForEach(share.participants, id: \.userIdentity.userRecordID) { participant in
-//							if let name = participant.userIdentity.nameComponents {
-//								Text(name, format: .name(style: .long))
-//							}
-//						}
-//					}
+					if let share {
+						ForEach(share.participants, id: \.userIdentity.userRecordID) { participant in
+							if let name = participant.userIdentity.nameComponents {
+								Text(name, format: .name(style: .long))
+							}
+						}
+					}
 					
 				}
 				.padding(.vertical)

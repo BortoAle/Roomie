@@ -21,8 +21,8 @@ func hashTaskExecutor(taskName: String, roommatesList:[String]) -> String {
     let hashValue = formattedString.hash
     let absHash = abs(hashValue)
     
-    // Map hash value to the range
-    let mappedValue = absHash % (0 - roommatesList.count)
+	// Map hash value to the range
+	let mappedValue = absHash % (0 - roommatesList.count+1)
     
     let selectedRoommate = roommatesList[mappedValue]
     return selectedRoommate

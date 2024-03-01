@@ -21,6 +21,12 @@ struct ActivitiesView: View {
 	@FetchRequest private var activities: FetchedResults<Activity>
 	@State private var editedActivity: Activity? = nil
 	private let share: CKShare?
+	private var participants: [String] {
+		guard share != nil else { return [] }
+		return share!.participants.map({ participant in
+			participant.userIdentity.nameComponents?.familyName ?? "Name N/A"
+		})
+	}
 	
 	private let stack = CoreDataStack.shared
 	

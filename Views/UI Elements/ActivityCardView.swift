@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CloudKit
 
 struct ActivityCardView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -14,6 +15,22 @@ struct ActivityCardView: View {
     var emoji: String = "📝"
 	@State var isToggled: Bool
     private let stack = CoreDataStack.shared
+	
+	private let share: CKShare?
+	private var participants: [String] {
+		guard share != nil else { return [] }
+		return share!.participants.map({ participant in
+			participant.userIdentity.nameComponents?.familyName ?? "Name N/A"
+		})
+	}
+	
+	init(activity: Activity, showingToggle: Bool, emoji: String, isToggled: Bool) {
+		self.activity = activity
+		self.showingToggle = showingToggle
+		self.emoji = emoji
+		self.isToggled = isToggled
+		self.share = stack.getShare(activity.house!)
+	}
     
     var body: some View {
         HStack(spacing: 15){
@@ -39,7 +56,7 @@ struct ActivityCardView: View {
                     Image(systemName: "person.fill")
                         .imageScale(.small)
                     
-					Text(hashTaskExecutor(taskName: activity.name ?? "", roommatesList: ["Alessandro", "Matt", "Su", "Maria"]))
+					Text(hashTaskExecutor(taskName: activity.name ?? "", roommatesList: participants))
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
