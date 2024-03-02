@@ -30,13 +30,12 @@ struct RoomSelectionView: View {
                     VStack{
                         ForEach(viewModel.roomSelectionCards){  roomSelectionCard in
                             RoomSelectionCardView(
-                                roomName: roomSelectionCard.roomName,
-                                roomEmoji: roomSelectionCard.roomEmoji,
-                                addAction: {
-                                    suggestedAddActivityName = roomSelectionCard.activityName
-                                    showingAddActivity=true
-                                },
-                                amountOfCardsAdded: $amountOfCardsAdded
+								amountOfCardsAdded: $amountOfCardsAdded, roomName: roomSelectionCard.roomName,
+								roomEmoji: roomSelectionCard.roomEmoji,
+								addAction: {
+									suggestedAddActivityName = roomSelectionCard.activityName
+									showingAddActivity=true
+								}
                             )
                         }
                     }

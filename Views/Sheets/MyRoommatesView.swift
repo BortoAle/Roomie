@@ -61,14 +61,17 @@ struct MyRoommatesView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button("Done") { dismiss() }
+					Button(action: dismiss.callAsFunction){
+						Text("Done")
+							.font(.headline)
+					}
                 }
                 
                 ToolbarItem (placement: .navigationBarTrailing){
                     Button(action: { showingAddHouseSheet = true
                     }, label: {
-                        Image(systemName: "plus")
-                            .fontWeight(.bold)
+						Label("Add House", systemImage: "plus")
+							.fontWeight(.semibold)
                     })
                 }
             }

@@ -79,8 +79,9 @@ struct ActivitiesView: View {
 							myFilter.toggle()
 						}
 					}, label: {
-						Image(systemName: myFilter ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
-							.fontWeight(.bold)
+						Label("Filter", systemImage: myFilter ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
+							.fontWeight(.semibold)
+							.labelStyle(.iconOnly)
 					})
 				}
 				
@@ -88,8 +89,9 @@ struct ActivitiesView: View {
 					Button(action: {
 						showingAddActivity = true
 					}, label: {
-						Image(systemName: "plus")
-							.fontWeight(.bold)
+						Label("Add Activity", systemImage: "plus")
+							.fontWeight(.semibold)
+							.labelStyle(.iconOnly)
 					})
 				}
 			}

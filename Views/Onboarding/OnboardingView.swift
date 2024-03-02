@@ -57,9 +57,9 @@ struct OnboardingView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.neroGray)
             .onAppear {
-                Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+                Timer.scheduledTimer(withTimeInterval: 0.8, repeats: true) { timer in
                     if animationPhase < 4 {
-                        withAnimation(){
+                        withAnimation {
                             animationPhase += 1
                         }
                     } else {

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct TrashSelectionCard: Identifiable {
     var id: UUID = UUID()

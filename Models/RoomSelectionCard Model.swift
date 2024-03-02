@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct RoomSelectionCard: Identifiable {
     var id: UUID = UUID()

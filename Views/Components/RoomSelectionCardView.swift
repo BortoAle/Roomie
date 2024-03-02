@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct RoomSelectionCardView: View {
-    
+	@Binding var amountOfCardsAdded: Int
+	@State var isSelected = false
+	
     var roomName: String
     var roomEmoji: String
     var addAction: (() -> Void)? = nil
-    @Binding var amountOfCardsAdded: Int
-    
-    @State var isSelected = false
     
     var body: some View {
         
@@ -65,5 +64,5 @@ struct RoomSelectionCardView: View {
 }
 
 #Preview {
-    RoomSelectionCardView(roomName: "Test", roomEmoji: "❌", amountOfCardsAdded: .constant(0))
+	RoomSelectionCardView(amountOfCardsAdded: .constant(0), roomName: "Test", roomEmoji: "❌")
 }

@@ -18,7 +18,7 @@ struct JoinGroupView: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                 
-                Spacer()
+                Spacer(minLength: 0)
                 
                 Image(systemName: "link")
                     .foregroundColor(.accentColor)

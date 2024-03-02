@@ -7,6 +7,12 @@
     " " : {
 
     },
+    "Add Activity" : {
+
+    },
+    "Add House" : {
+
+    },
     "Ask the creator of your group to send you an invitation link" : {
       "localizations" : {
         "es" : {
@@ -22,6 +28,9 @@
           }
         }
       }
+    },
+    "Close" : {
+
     },
     "Create a new house" : {
 
@@ -60,6 +69,9 @@
 
     },
     "Enter house name" : {
+
+    },
+    "Filter" : {
 
     },
     "Houses settings" : {

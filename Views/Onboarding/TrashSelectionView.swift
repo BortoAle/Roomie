@@ -34,13 +34,12 @@ struct TrashSelectionView: View {
                             trashSelectionCard in
                             
                             RoomSelectionCardView(
-                                roomName: trashSelectionCard.trashName,
-                                roomEmoji: trashSelectionCard.trashEmoji,
-                                addAction: {
-                                    suggestedAddActivityName = trashSelectionCard.activityName
-                                    showingAddActivity=true
-                                },
-                                amountOfCardsAdded: $amountOfCardsAdded
+								amountOfCardsAdded: $amountOfCardsAdded, roomName: trashSelectionCard.trashName,
+								roomEmoji: trashSelectionCard.trashEmoji,
+								addAction: {
+									suggestedAddActivityName = trashSelectionCard.activityName
+									showingAddActivity=true
+								}
                             )
                         }
                     }
