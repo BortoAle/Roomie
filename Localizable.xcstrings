@@ -2,16 +2,44 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
     },
     " " : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
     },
     "Add Activity" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi Attività"
+          }
+        }
+      }
     },
     "Add House" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi Casa"
+          }
+        }
+      }
     },
     "Ask the creator of your group to send you an invitation link" : {
       "localizations" : {
@@ -24,94 +52,290 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "TEMP Ask the creator of your group to send you an invitation link"
+            "value" : "Chiedi al proprietario del gruppo di invitarti"
           }
         }
       }
     },
     "Close" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
+          }
+        }
+      }
     },
     "Create a new house" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea una nuova casa"
+          }
+        }
+      }
     },
     "Created by %@" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creato da %@"
+          }
+        }
+      }
     },
     "Created by you" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creato da te"
+          }
+        }
+      }
     },
     "Days active" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorni"
+          }
+        }
+      }
     },
     "Delete" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina"
+          }
+        }
+      }
     },
     "Do you want to delete this activity completely?" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuoi eliminare definitivamente questa attività?"
+          }
+        }
+      }
     },
     "Do you want to delete this house completely?" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuoi eliminare definitivamente questa casa?"
+          }
+        }
+      }
     },
     "Done" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fine"
+          }
+        }
+      }
     },
     "Edit" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica"
+          }
+        }
+      }
     },
     "Edit activity" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica attività"
+          }
+        }
+      }
     },
     "Edit house" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica casa"
+          }
+        }
+      }
     },
     "Enter activity name" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci nome attività"
+          }
+        }
+      }
     },
     "Enter house name" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci nome casa"
+          }
+        }
+      }
     },
     "Filter" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro"
+          }
+        }
+      }
     },
     "Houses settings" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni case"
+          }
+        }
+      }
     },
     "It’s not your Activity" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'attività non è assegnata a te"
+          }
+        }
+      }
     },
     "My Houses" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le mie case"
+          }
+        }
+      }
     },
     "New activity" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuova attività"
+          }
+        }
+      }
     },
     "New house" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuova casa"
+          }
+        }
+      }
     },
     "No Houses" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non hai case"
+          }
+        }
+      }
     },
     "Oups, there was an error:" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ops, c'è stato un errore:"
+          }
+        }
+      }
     },
     "Share" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi"
+          }
+        }
+      }
     },
     "Today" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oggi"
+          }
+        }
+      }
     },
     "Welcome to Roomie" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benvenuto in Roomie"
+          }
+        }
+      }
     },
     "What rooms do you have?" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Che stanze hai?"
+          }
+        }
+      }
     },
     "What trash do you sort?" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quali rifiuti butti?"
+          }
+        }
+      }
     },
     "You can't undo this action." : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non puoi annullare questa azione"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
