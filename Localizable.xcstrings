@@ -51,6 +51,26 @@
         }
       }
     },
+    "Add your roommates" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi i tuoi coinquilini"
+          }
+        }
+      }
+    },
+    "Adjust trash schedule" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pianifica la gestione dei rifiuti"
+          }
+        }
+      }
+    },
     "Ask the creator of your group to send you an invitation link" : {
       "localizations" : {
         "es" : {
@@ -93,6 +113,106 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annulla"
+          }
+        }
+      }
+    },
+    "Clean Balcony" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire balcone"
+          }
+        }
+      }
+    },
+    "Clean Bathroom" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire bagno"
+          }
+        }
+      }
+    },
+    "Clean Closet" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire ripostiglio"
+          }
+        }
+      }
+    },
+    "Clean Corridor" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire corridoio"
+          }
+        }
+      }
+    },
+    "Clean Dining Area" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire zona pranzo"
+          }
+        }
+      }
+    },
+    "Clean Entryway" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire entrata"
+          }
+        }
+      }
+    },
+    "Clean Home Office" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire ufficio"
+          }
+        }
+      }
+    },
+    "Clean Kitchen" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire cucina"
+          }
+        }
+      }
+    },
+    "Clean Laundry Room" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire lavanderia"
+          }
+        }
+      }
+    },
+    "Clean Living Room" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulire salotto"
           }
         }
       }
@@ -157,6 +277,16 @@
         }
       }
     },
+    "Create a shared space for coordination and collaboration." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collabora creando una casa condivisa."
+          }
+        }
+      }
+    },
     "Create group instead" : {
       "localizations" : {
         "it" : {
@@ -193,6 +323,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Creato da te"
+          }
+        }
+      }
+    },
+    "Customize and adjust reminders for timely trash disposal." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea e personalizza promemoria per gestire i rifiuti."
           }
         }
       }
@@ -353,6 +493,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Finestre"
+          }
+        }
+      }
+    },
+    "Hello World" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ciao, mondo!"
           }
         }
       }
@@ -557,6 +707,29 @@
         }
       }
     },
+    "Schedule cleaning" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pianifica le pulizie"
+          }
+        }
+      }
+    },
+    "Sed cupidatat enim occaecat fugiat fugiat ea sint mollit proident ad laborum." : {
+
+    },
+    "Set up and organize a cleaning schedule for shared living spaces." : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestisci e organizza la pulizia della casa condivisa."
+          }
+        }
+      }
+    },
     "Share" : {
       "localizations" : {
         "it" : {
@@ -583,6 +756,86 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bottone test"
+          }
+        }
+      }
+    },
+    "Throw Glass" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smaltire vetro"
+          }
+        }
+      }
+    },
+    "Throw Metal" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smaltire metalli"
+          }
+        }
+      }
+    },
+    "Throw Non-Recyclable" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smaltire indifferenziata"
+          }
+        }
+      }
+    },
+    "Throw Oil" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smaltire olii"
+          }
+        }
+      }
+    },
+    "Throw Organic" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smaltire umido"
+          }
+        }
+      }
+    },
+    "Throw Paper" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smaltire carta"
+          }
+        }
+      }
+    },
+    "Throw Plastic" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smaltire plastica"
+          }
+        }
+      }
+    },
+    "Throw Recyclable" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smaltire riciclabile"
           }
         }
       }

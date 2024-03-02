@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct OnboardingCardView: View {
-    var headerText: String
-    var descriptionText: String
+    var headerText: LocalizedStringResource
+    var descriptionText: LocalizedStringResource
     var iconName: String
     
     let iconSize: CGFloat = 40
