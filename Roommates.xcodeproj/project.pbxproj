@@ -38,6 +38,7 @@
 		6AEA950D2B7E0C4E0063B760 /* RoommatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */; };
 		6AEA950F2B7E0C4E0063B760 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA950E2B7E0C4E0063B760 /* ContentView.swift */; };
 		6AEA95112B7E0C4F0063B760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEA95102B7E0C4F0063B760 /* Assets.xcassets */; };
+		6AEC3B342B939C2800987D38 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6AEC3B332B939C2800987D38 /* .swiftlint.yml */; };
 		6AF5FEC22B8DEDC000BE5B60 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5FEC12B8DEDC000BE5B60 /* CoreDataStack.swift */; };
 		6AF5FEC42B8DEE7500BE5B60 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5FEC32B8DEE7500BE5B60 /* ShareController.swift */; };
 		6AF5FEC62B8DEEF800BE5B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5FEC52B8DEEF800BE5B60 /* AppDelegate.swift */; };
@@ -89,6 +90,7 @@
 		6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommatesApp.swift; sourceTree = "<group>"; };
 		6AEA950E2B7E0C4E0063B760 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AEA95102B7E0C4F0063B760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		6AEC3B332B939C2800987D38 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		6AF5FEC12B8DEDC000BE5B60 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		6AF5FEC32B8DEE7500BE5B60 /* ShareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
 		6AF5FEC52B8DEEF800BE5B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */,
 				6A777A092B93609F00C5E694 /* Roommates.entitlements */,
 				1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */,
+				6AEC3B332B939C2800987D38 /* .swiftlint.yml */,
 				6AEA950A2B7E0C4E0063B760 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				6AEA95052B7E0C4E0063B760 /* Sources */,
 				6AEA95062B7E0C4E0063B760 /* Frameworks */,
 				6AEA95072B7E0C4E0063B760 /* Resources */,
+				6AEC3B322B939A5400987D38 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -318,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEC3B342B939C2800987D38 /* .swiftlint.yml in Resources */,
 				1A4BB3802B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt in Resources */,
 				6AEA95112B7E0C4F0063B760 /* Assets.xcassets in Resources */,
 				1AA8A9482B8F4BC8009CE473 /* Localizable.xcstrings in Resources */,
@@ -325,6 +330,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AEC3B322B939A5400987D38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6AEA95052B7E0C4E0063B760 /* Sources */ = {
@@ -509,6 +536,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = ZPG82D37U3;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roommates/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Roomie;
@@ -547,6 +575,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = ZPG82D37U3;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Roommates/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Roomie;

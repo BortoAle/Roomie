@@ -16,7 +16,7 @@ func currentGMTDate() -> String {
 }
 
 func hashTaskExecutor(taskName: String, roommatesList:[String]) -> String {
-    if roommatesList.count == 0{
+    if roommatesList.isEmpty {
         return "Name N/A"
     }
 

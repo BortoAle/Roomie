@@ -11,15 +11,15 @@ import CloudKit
 struct ActivitiesView: View {
 	@Environment(\.managedObjectContext) private var viewContext
 	@Environment(AppState.self) private var appState
-	
+
 	@FetchRequest private var activities: FetchedResults<Activity>
-	
+
 	@State private var myFilter = false
 	@State private var showingEditActivity = false
 	@State private var showingAddActivity = false
 	@State private var openedSheetSize: Double = 0
-	@State private var editedActivity: Activity? = nil
-	
+	@State private var editedActivity: Activity?
+
 	private let stack = CoreDataStack.shared
 	private let share: CKShare?
 	private var participants: [PersonNameComponents] {
@@ -29,7 +29,7 @@ struct ActivitiesView: View {
 			participant.userIdentity.nameComponents
 		})
 	}
-	
+
 	init(house: House) {
 		share = stack.getShare(house)
 		_activities = FetchRequest(entity: Activity.entity(),
@@ -37,7 +37,7 @@ struct ActivitiesView: View {
 								   predicate: NSPredicate(format: "%K = %@", #keyPath(Activity.house), house),
 								   animation: .default)
 	}
-	
+
 	var body: some View {
 		NavigationStack {
 			List {
@@ -84,8 +84,8 @@ struct ActivitiesView: View {
 							.labelStyle(.iconOnly)
 					})
 				}
-				
-				ToolbarItem (placement: .navigationBarTrailing){
+
+				ToolbarItem(placement: .navigationBarTrailing) {
 					Button(action: {
 						showingAddActivity = true
 					}, label: {
@@ -97,17 +97,17 @@ struct ActivitiesView: View {
 			}
 		}
 	}
-	
+
 	private func canEdit(activity: Activity) -> Bool {
 		stack.canEdit(object: activity)
 	}
-	
+
 }
 
 #Preview {
 	let appState = AppState()
 	appState.selectedHouse = .mockup
-	
+
 	return ActivitiesView(house: .mockup)
 		.environment(\.managedObjectContext, CoreDataStack.preview.context)
 		.environment(appState)

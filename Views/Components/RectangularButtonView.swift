@@ -9,33 +9,30 @@
 import SwiftUI
 
 struct RectangularButton: View {
-    
-    var text: LocalizedStringResource
-
-    var color: Color
-    var action: (() -> Void)? = nil
-    
-    var body: some View {
-        Button(action: {
-            action?()
-        })
-        {
-            Text(text)
-                .font(.title3)
-                .foregroundStyle(.white)
-                .fontWeight(.bold)
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(color)
-                )
-        }
-        
-    }
+	var text: LocalizedStringResource
+	
+	var color: Color
+	var action: (() -> Void)?
+	
+	var body: some View {
+		Button(action: {
+			action?()
+		}, label: {
+			Text(text)
+				.font(.title3)
+				.foregroundStyle(.white)
+				.fontWeight(.bold)
+				.padding()
+				.frame(maxWidth: .infinity)
+				.background(
+					RoundedRectangle(cornerRadius: 10)
+						.foregroundColor(color)
+				)
+		})
+	}
 }
 
 
 #Preview {
-    RectangularButton(text: "Test Button", color: .accentColor)
+	RectangularButton(text: "Test Button", color: .accentColor)
 }

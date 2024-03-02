@@ -8,8 +8,8 @@
 import Foundation
 
 struct TrashSelectionCard: Identifiable {
-    var id: UUID = UUID()
-    var trashName: String
-    var trashEmoji: String
-    var activityName: String
+	var id: UUID = UUID()
+	var trashName: String
+	var trashEmoji: String
+	var activityName: String
 }

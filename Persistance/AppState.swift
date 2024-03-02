@@ -9,5 +9,5 @@ import SwiftUI
 
 @Observable
 class AppState {
-    var selectedHouse: House? = nil
+	var selectedHouse: House? = nil
 }
