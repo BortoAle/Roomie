@@ -10,7 +10,8 @@ import SwiftUI
 
 struct RectangularButton: View {
     
-    var text: String
+    var text: LocalizedStringResource
+
     var color: Color
     var action: (() -> Void)? = nil
     

@@ -21,6 +21,16 @@
         }
       }
     },
+    "Add" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi"
+          }
+        }
+      }
+    },
     "Add Activity" : {
       "localizations" : {
         "it" : {
@@ -57,6 +67,36 @@
         }
       }
     },
+    "Balcony" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Balcone"
+          }
+        }
+      }
+    },
+    "Bathroom" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagno"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
+          }
+        }
+      }
+    },
     "Close" : {
       "localizations" : {
         "it" : {
@@ -67,12 +107,72 @@
         }
       }
     },
+    "Closet" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripostiglio"
+          }
+        }
+      }
+    },
+    "Complete Anyway" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completa comunque"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continua"
+          }
+        }
+      }
+    },
+    "Corridor" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corridoio"
+          }
+        }
+      }
+    },
     "Create a new house" : {
       "localizations" : {
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crea una nuova casa"
+          }
+        }
+      }
+    },
+    "Create group instead" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continua creando gruppo"
+          }
+        }
+      }
+    },
+    "Create new group" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea nuovo gruppo"
           }
         }
       }
@@ -113,6 +213,36 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elimina"
+          }
+        }
+      }
+    },
+    "Delete Activity" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimuovi attività"
+          }
+        }
+      }
+    },
+    "Delete House" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimuovi casa"
+          }
+        }
+      }
+    },
+    "Dining Area" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zona Pranzo"
           }
         }
       }
@@ -197,12 +327,42 @@
         }
       }
     },
+    "Entryway" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrata"
+          }
+        }
+      }
+    },
     "Filter" : {
       "localizations" : {
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Filtro"
+          }
+        }
+      }
+    },
+    "Glass" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finestre"
+          }
+        }
+      }
+    },
+    "Home Office" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ufficio"
           }
         }
       }
@@ -223,6 +383,56 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "L'attività non è assegnata a te"
+          }
+        }
+      }
+    },
+    "Join group" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partecipa ad un gruppo"
+          }
+        }
+      }
+    },
+    "Kitchen" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cucina"
+          }
+        }
+      }
+    },
+    "Laundry Room" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lavanderia"
+          }
+        }
+      }
+    },
+    "Living Room" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salotto"
+          }
+        }
+      }
+    },
+    "Metal" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metalli"
           }
         }
       }
@@ -267,6 +477,36 @@
         }
       }
     },
+    "Non-Recyclable" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indifferenziata"
+          }
+        }
+      }
+    },
+    "Oil" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olio"
+          }
+        }
+      }
+    },
+    "Organic" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umido"
+          }
+        }
+      }
+    },
     "Oups, there was an error:" : {
       "localizations" : {
         "it" : {
@@ -277,12 +517,72 @@
         }
       }
     },
+    "Paper" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carta"
+          }
+        }
+      }
+    },
+    "Plastic" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plastica"
+          }
+        }
+      }
+    },
+    "Recyclable" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riciclabile"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva"
+          }
+        }
+      }
+    },
     "Share" : {
       "localizations" : {
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Condividi"
+          }
+        }
+      }
+    },
+    "Skip for now" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salta per ora"
+          }
+        }
+      }
+    },
+    "Test Button" : {
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bottone test"
           }
         }
       }

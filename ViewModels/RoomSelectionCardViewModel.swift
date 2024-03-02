@@ -9,15 +9,15 @@ import Foundation
 
 class RoomSelectionCardViewModel {
     var roomSelectionCards = [
-        RoomSelectionCard(roomName: "Kitchen", roomEmoji: "🍳", activityName: "Clean Kitchen"),
-        RoomSelectionCard(roomName: "Bathroom", roomEmoji: "🚿", activityName: "Clean Bathroom"),
-        RoomSelectionCard(roomName: "Dining Area", roomEmoji: "🍽️", activityName: "Clean Dining Area"),
-        RoomSelectionCard(roomName: "Corridor", roomEmoji: "🚶", activityName: "Clean Corridor"),
-        RoomSelectionCard(roomName: "Entryway", roomEmoji: "🚪", activityName: "Clean Entryway"),
-        RoomSelectionCard(roomName: "Balcony", roomEmoji: "🌿", activityName: "Clean Balcony"),
-        RoomSelectionCard(roomName: "Laundry Room", roomEmoji: "🧺", activityName: "Clean Laundry Room"),
-        RoomSelectionCard(roomName: "Living Room", roomEmoji: "🛋️", activityName: "Clean Living Room"),
-        RoomSelectionCard(roomName: "Home Office", roomEmoji: "📠", activityName: "Clean Home Office"),
-        RoomSelectionCard(roomName: "Closet", roomEmoji: "👔", activityName: "Clean Closet")
+        RoomSelectionCard(roomName: String(localized: "Kitchen"), roomEmoji: "🍳", activityName: "Clean Kitchen"),
+        RoomSelectionCard(roomName: String(localized: "Bathroom"), roomEmoji: "🚿", activityName: "Clean Bathroom"),
+        RoomSelectionCard(roomName: String(localized: "Dining Area"), roomEmoji: "🍽️", activityName: "Clean Dining Area"),
+        RoomSelectionCard(roomName: String(localized: "Corridor"), roomEmoji: "🚶", activityName: "Clean Corridor"),
+        RoomSelectionCard(roomName: String(localized: "Entryway"), roomEmoji: "🚪", activityName: "Clean Entryway"),
+        RoomSelectionCard(roomName: String(localized: "Balcony"), roomEmoji: "🌿", activityName: "Clean Balcony"),
+        RoomSelectionCard(roomName: String(localized: "Laundry Room"), roomEmoji: "🧺", activityName: "Clean Laundry Room"),
+        RoomSelectionCard(roomName: String(localized: "Living Room"), roomEmoji: "🛋️", activityName: "Clean Living Room"),
+        RoomSelectionCard(roomName: String(localized: "Home Office"), roomEmoji: "📠", activityName: "Clean Home Office"),
+        RoomSelectionCard(roomName: String(localized: "Closet"), roomEmoji: "👔", activityName: "Clean Closet")
     ]
 }
