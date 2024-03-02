@@ -42,18 +42,18 @@ struct ActivitiesView: View {
 		NavigationStack {
 			List {
 				Section {
-						ForEach(activities) { activity in
-							ActivityCardView(activity: activity, showingToggle: true, emoji: activity.emoji ?? "📝", isToggled: activity.isCompleted)
-								.swipeActions {
-									Button {
-										editedActivity = activity
-									}
-								label: {
-									Label("Edit", systemImage: "slider.vertical.3")
+					ForEach(activities) { activity in
+						ActivityCardView(activity: activity, showingToggle: true, emoji: activity.emoji ?? "📝", isToggled: activity.isCompleted)
+							.swipeActions {
+								Button {
+									editedActivity = activity
 								}
-								.tint(.accentColor)
-								}
-						}
+							label: {
+								Label("Edit", systemImage: "slider.vertical.3")
+							}
+							.tint(.accentColor)
+							}
+					}
 				}
 			header: {
 				Text("Today")

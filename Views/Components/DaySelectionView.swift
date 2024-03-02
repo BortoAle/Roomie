@@ -14,7 +14,6 @@ struct DayData: Hashable {
 }
 
 struct DaySelectionView: View {
-    @Environment(\.colorScheme) var colorScheme
     @Binding var selectedDays: [Int]
     
     var firstWeekday: Int {
@@ -47,7 +46,7 @@ struct DaySelectionView: View {
         }
         .padding(10)
         .frame(maxWidth: .infinity)
-        .background(colorScheme == .dark ? .secondary.opacity(0.2) : Color.white)
+		.background(.neroGray)
         .clipShape(RoundedRectangle(cornerRadius: 10.0))
         
     }
