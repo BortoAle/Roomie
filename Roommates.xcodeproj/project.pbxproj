@@ -75,8 +75,8 @@
 		1AEE37162B921CF7002D7899 /* HashTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTask.swift; sourceTree = "<group>"; };
 		1AF630A42B88A89D00FD9938 /* SheetAdaptiveSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAdaptiveSize.swift; sourceTree = "<group>"; };
 		6A188DE42B888F02001B21F1 /* Roomie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Roomie.xcdatamodel; sourceTree = "<group>"; };
-		6A188E092B889096001B21F1 /* Roommates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Roommates.entitlements; path = Roommates/Roommates.entitlements; sourceTree = "<group>"; };
-		6A188E0A2B8890A1001B21F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Roommates/Info.plist; sourceTree = "<group>"; };
+		6A188E092B889096001B21F1 /* Roommates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Roommates.entitlements; sourceTree = "<group>"; };
+		6A188E0A2B8890A1001B21F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A188E0D2B88A602001B21F1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
 		6A2B06742B9317F20095B043 /* RectangularButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularButtonView.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		6AEA95092B7E0C4E0063B760 /* Roommates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roommates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommatesApp.swift; sourceTree = "<group>"; };
 		6AEA950E2B7E0C4E0063B760 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6AEA95102B7E0C4F0063B760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Roommates/Assets.xcassets; sourceTree = "<group>"; };
+		6AEA95102B7E0C4F0063B760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		6AF5FEC12B8DEDC000BE5B60 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		6AF5FEC32B8DEE7500BE5B60 /* ShareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
 		6AF5FEC52B8DEEF800BE5B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +121,7 @@
 		1A1584CA2B85296C00AFA7DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */,
 				1A4BB3682B84B8B1003B40DC /* Onboarding */,
 				1A4BB3692B84B8B1003B40DC /* Components */,
 				1A4BB3742B84B9D7003B40DC /* Sheets */,
@@ -169,14 +170,6 @@
 			path = Sheets;
 			sourceTree = "<group>";
 		};
-		1A4BB37A2B84BB1D003B40DC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		1ACD8B442B8762E9004AAABE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,20 +207,19 @@
 		6AEA95002B7E0C4E0063B760 = {
 			isa = PBXGroup;
 			children = (
-				1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */,
-				6A188E0A2B8890A1001B21F1 /* Info.plist */,
-				6A188E092B889096001B21F1 /* Roommates.entitlements */,
-				6AEA95102B7E0C4F0063B760 /* Assets.xcassets */,
 				6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */,
 				6AEA950E2B7E0C4E0063B760 /* ContentView.swift */,
-				6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */,
 				6A2B06732B93174C0095B043 /* Persistance */,
 				6A188DE22B888E9E001B21F1 /* Sharing */,
 				CCA6C3062B85F7D400AA3102 /* ViewModels */,
 				CCA6C3052B85F66300AA3102 /* Models */,
 				1A1584CA2B85296C00AFA7DB /* Views */,
 				1ACD8B442B8762E9004AAABE /* Support Files */,
-				1A4BB37A2B84BB1D003B40DC /* Resources */,
+				6A188E0A2B8890A1001B21F1 /* Info.plist */,
+				6A188E092B889096001B21F1 /* Roommates.entitlements */,
+				6AEA95102B7E0C4F0063B760 /* Assets.xcassets */,
+				1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */,
+				1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */,
 				6AEA950A2B7E0C4E0063B760 /* Products */,
 			);
 			sourceTree = "<group>";
