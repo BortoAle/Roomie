@@ -124,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */,
+				6AEA950E2B7E0C4E0063B760 /* ContentView.swift */,
 				1A4BB3682B84B8B1003B40DC /* Onboarding */,
 				1A4BB3692B84B8B1003B40DC /* Components */,
 				1A4BB3742B84B9D7003B40DC /* Sheets */,
@@ -209,18 +210,17 @@
 		6AEA95002B7E0C4E0063B760 = {
 			isa = PBXGroup;
 			children = (
+				6A188E0A2B8890A1001B21F1 /* Info.plist */,
+				6AEA95102B7E0C4F0063B760 /* Assets.xcassets */,
+				1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */,
+				6A777A092B93609F00C5E694 /* Roommates.entitlements */,
 				6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */,
-				6AEA950E2B7E0C4E0063B760 /* ContentView.swift */,
 				6A2B06732B93174C0095B043 /* Persistance */,
 				6A188DE22B888E9E001B21F1 /* Sharing */,
 				CCA6C3062B85F7D400AA3102 /* ViewModels */,
 				CCA6C3052B85F66300AA3102 /* Models */,
 				1A1584CA2B85296C00AFA7DB /* Views */,
 				1ACD8B442B8762E9004AAABE /* Support Files */,
-				6A188E0A2B8890A1001B21F1 /* Info.plist */,
-				6AEA95102B7E0C4F0063B760 /* Assets.xcassets */,
-				1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */,
-				6A777A092B93609F00C5E694 /* Roommates.entitlements */,
 				1A4BB37B2B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt */,
 				6AEC3B332B939C2800987D38 /* .swiftlint.yml */,
 				6AEA950A2B7E0C4E0063B760 /* Products */,
