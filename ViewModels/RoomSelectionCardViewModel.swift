@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class RoomSelectionCardViewModel{
+class RoomSelectionCardViewModel {
     
     var roomSelectionCards = [
         RoomSelectionCard(roomName: "Kitchen", roomEmoji: "🍳", activityName: "Clean Kitchen"),

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct RoomSelectionCard: Identifiable{
+struct RoomSelectionCard: Identifiable {
     var id: UUID = UUID()
     var roomName: String
     var roomEmoji: String

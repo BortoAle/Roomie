@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct TrashSelectionCard: Identifiable{
+struct TrashSelectionCard: Identifiable {
     var id: UUID = UUID()
     var trashName: String
     var trashEmoji: String

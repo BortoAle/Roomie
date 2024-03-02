@@ -30,7 +30,7 @@ struct MyRoommatesView: View {
     var body: some View {
         NavigationStack {
             ZStack{
-                if houses.count == 0{
+				if houses.isEmpty {
                     ContentUnavailableView("No Houses", systemImage: "house.fill", description: Text("Create a new house"))
                 }
                 else{
@@ -69,7 +69,7 @@ struct MyRoommatesView: View {
                     }, label: {
                         Image(systemName: "plus")
                             .fontWeight(.bold)
-                    }).tint(.white)
+                    })
                 }
             }
             .sheet(item: $sharingHouse, content: { house in

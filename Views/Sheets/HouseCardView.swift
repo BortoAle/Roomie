@@ -10,6 +10,7 @@ import CloudKit
 
 struct HouseCardView: View {
 	
+	@Environment(\.colorScheme) private var colorScheme
 	@Environment(AppState.self) var appState
 	@Environment(\.dismiss) var dismiss
 	let house: House
@@ -31,7 +32,7 @@ struct HouseCardView: View {
 					HStack{
 						Image(systemName: "house.fill")
 							.font(.title2)
-							.foregroundStyle(.white)
+							.foregroundStyle(.accent)
 						
 						VStack(alignment: .leading){
 							Text(house.name ?? "N/A")
@@ -40,14 +41,13 @@ struct HouseCardView: View {
 							if stack.isShared(object: house) {
 								if stack.isOwner(object: house) {
 									Text("Created by you")
-										.foregroundStyle(.gray)
+										.foregroundStyle(.secondary)
 								} else {
 									Text("Created by \(share?.owner.userIdentity.nameComponents?.givenName ?? "")")
-										.foregroundStyle(.gray)
+										.foregroundStyle(.secondary)
 								}
 							}
 						}
-						.foregroundStyle(.white)
 						
 						Spacer()
 						
@@ -55,20 +55,11 @@ struct HouseCardView: View {
 							Label("Share", systemImage: "square.and.arrow.up")
 						})
 					}
-					if let share {
-						ForEach(share.participants, id: \.userIdentity.userRecordID) { participant in
-							if let name = participant.userIdentity.nameComponents {
-								Text(name, format: .name(style: .long))
-							}
-						}
-					}
-					
 				}
-				.padding(.vertical)
-				
+				.padding(.vertical, 8)
 			})
-			
 		}
+		.foregroundStyle(colorScheme == .light ? .black : .white)
 		.labelStyle(.iconOnly)
 		.imageScale(.large)
 		.swipeActions {

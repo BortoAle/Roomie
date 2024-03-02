@@ -11,24 +11,21 @@ import CoreData
 
 @main
 struct RoommatesApp: App {
-    
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    var appState = AppState()
-    let container = CoreDataStack.shared.persistentContainer
-    
-    @AppStorage("isOnboarding") var isOnboarding: Bool = true
-    
+    @UIApplicationDelegateAdaptor(AppDelegate.self)
+	private var appDelegate
+	
+	@AppStorage("isOnboarding")
+	private var isOnboarding: Bool = true
+	
+	private let container = CoreDataStack.shared.persistentContainer
+	private let appState = AppState()
+	
     var body: some Scene {
         WindowGroup {
-            Group{
-                if isOnboarding{
-                    OnboardingView()
-                }
-                else{
-                    ContentView()
-                }
-            }
-            .preferredColorScheme(.dark)
+			ContentView()
+			.fullScreenCover(isPresented: $isOnboarding, content: {
+				OnboardingView()
+			})
             .environment(\.managedObjectContext, container.viewContext)
             .environment(appState)
         }

@@ -9,26 +9,26 @@ import SwiftUI
 import CloudKit
 
 struct ActivitiesView: View {
+	@Environment(\.managedObjectContext) private var viewContext
+	@Environment(AppState.self) private var appState
+	
+	@FetchRequest private var activities: FetchedResults<Activity>
+	
 	@State private var myFilter = false
 	@State private var showingEditActivity = false
 	@State private var showingAddActivity = false
-	
-	@Environment(\.managedObjectContext) private var viewContext
-	@Environment(AppState.self) var appState
-	
 	@State private var openedSheetSize: Double = 0
-	
-	@FetchRequest private var activities: FetchedResults<Activity>
 	@State private var editedActivity: Activity? = nil
-	private let share: CKShare?
-	private var participants: [String] {
-		guard share != nil else { return [] }
-		return share!.participants.map({ participant in
-			participant.userIdentity.nameComponents?.familyName ?? "Name N/A"
-		})
-	}
 	
 	private let stack = CoreDataStack.shared
+	private let share: CKShare?
+	private var participants: [PersonNameComponents] {
+		guard share != nil else { return [] }
+#warning("Check on person without name")
+		return share!.participants.compactMap({ participant in
+			participant.userIdentity.nameComponents
+		})
+	}
 	
 	init(house: House) {
 		share = stack.getShare(house)
@@ -40,44 +40,39 @@ struct ActivitiesView: View {
 	
 	var body: some View {
 		NavigationStack {
-			List{
-				Section(){
-					ForEach(activities){ activity in
-                        ActivityCardView(activity: activity, showingToggle: true, emoji: activity.emoji ?? "📝", isToggled: activity.isCompleted)
-							.swipeActions {
-								Button {
-									editedActivity = activity
+			List {
+				Section {
+						ForEach(activities) { activity in
+							ActivityCardView(activity: activity, showingToggle: true, emoji: activity.emoji ?? "📝", isToggled: activity.isCompleted)
+								.swipeActions {
+									Button {
+										editedActivity = activity
+									}
+								label: {
+									Label("Edit", systemImage: "slider.vertical.3")
 								}
-							label: {
-								Label("Edit", systemImage: "slider.vertical.3")
-							}
-							.tint(.accentColor)
-							}
-					}
+								.tint(.accentColor)
+								}
+						}
 				}
-				
 			header: {
 				Text("Today")
 					.headerProminence(.increased)
-					.listRowInsets(EdgeInsets())
+					.listRowInsets(.init(top: 8, leading: 0, bottom: 8, trailing: 0))
 					.fontWeight(.bold)
 			}
 			}
-			.padding(.top)
-			.sheet(item: $editedActivity, content: { activity in
+			.sheet(item: $editedActivity) { activity in
 				EditActivityView(activity: activity)
 					.onAppearUpdateHeight($openedSheetSize)
 					.presentationDetents([.height(openedSheetSize)])
-			})
-			.sheet(
-				isPresented: $showingAddActivity,
-				content: {
-					AddActivityView()
-						.onAppearUpdateHeight($openedSheetSize)
-						.presentationDetents([.height(openedSheetSize)])
-				}
-			)
-			.toolbar(content: {
+			}
+			.sheet(isPresented: $showingAddActivity) {
+				AddActivityView()
+					.onAppearUpdateHeight($openedSheetSize)
+					.presentationDetents([.height(openedSheetSize)])
+			}
+			.toolbar {
 				ToolbarItem (placement: .navigationBarTrailing){
 					Button(action: {
 						withAnimation(){
@@ -87,17 +82,17 @@ struct ActivitiesView: View {
 						Image(systemName: myFilter ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
 							.fontWeight(.bold)
 					})
-					.tint(.white)
 				}
 				
 				ToolbarItem (placement: .navigationBarTrailing){
-					Button(action: { showingAddActivity=true
+					Button(action: {
+						showingAddActivity = true
 					}, label: {
 						Image(systemName: "plus")
 							.fontWeight(.bold)
-					}).tint(.white)
+					})
 				}
-			})
+			}
 		}
 	}
 	
@@ -105,4 +100,13 @@ struct ActivitiesView: View {
 		stack.canEdit(object: activity)
 	}
 	
+}
+
+#Preview {
+	let appState = AppState()
+	appState.selectedHouse = .mockup
+	
+	return ActivitiesView(house: .mockup)
+		.environment(\.managedObjectContext, CoreDataStack.preview.context)
+		.environment(appState)
 }

@@ -11,7 +11,6 @@ struct JoinGroupView: View {
     @State private var isLoaded = false
     
     var body: some View {
-        NavigationStack{
             VStack {
                 Text("Ask the creator of your group to send you an invitation link")
                     .fontWeight(.semibold)
@@ -47,8 +46,6 @@ struct JoinGroupView: View {
                 .neroGray
             )
         }
-        .navigationBarBackButtonHidden(true)
-    }
 }
 
 #Preview {

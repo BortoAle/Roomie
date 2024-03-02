@@ -55,9 +55,7 @@ struct OnboardingView: View {
                 )
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                .neroGray
-            )
+            .background(.neroGray)
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
                     if animationPhase < 4 {
@@ -71,11 +69,9 @@ struct OnboardingView: View {
             }
             
         }
-        .navigationBarBackButtonHidden(true)
-        
     }
 }
 
 #Preview {
-    OnboardingView()
+		OnboardingView()
 }

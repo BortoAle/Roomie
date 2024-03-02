@@ -16,23 +16,18 @@ struct OnboardingCardView: View {
     
     var body: some View {
         HStack(spacing: 20){
-            Image(systemName: "circle")
-                .foregroundColor(.clear)
-                .font(.system(size: iconSize))
-                .fontWeight(.medium)
-                .overlay(
                     Image(systemName: iconName)
                         .foregroundColor(.accentColor)
                         .font(.system(size: iconSize))
                         .fontWeight(.medium)
-                )
+						.frame(width: iconSize, height: iconSize)
             
             VStack(alignment: .leading){
                 Text(headerText)
                     .fontWeight(.bold)
                 
                 Text(descriptionText)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }

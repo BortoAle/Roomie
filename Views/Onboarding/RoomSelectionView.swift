@@ -20,7 +20,6 @@ struct RoomSelectionView: View {
     @State var amountOfCardsAdded: Int = 0
     
     var body: some View {
-        NavigationStack{
             VStack(alignment: .leading){
                 Text("What rooms do you have?")
                     .bold()
@@ -63,8 +62,6 @@ struct RoomSelectionView: View {
             .background(
                 .neroGray
             )
-        }
-        .navigationBarBackButtonHidden(true)
         .sheet(
             isPresented: $showingAddActivity,
             content: {

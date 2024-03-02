@@ -8,8 +8,7 @@
 import Foundation
 import SwiftUI
 
-class TrashSelectionCardViewModel{
-    
+class TrashSelectionCardViewModel {
     var trashSelectionCards = [
         TrashSelectionCard(trashName: "Plastic", trashEmoji: "🥤", activityName: "Throw Plastic"),
         TrashSelectionCard(trashName: "Paper", trashEmoji: "🗞️️", activityName: "Throw Paper"),

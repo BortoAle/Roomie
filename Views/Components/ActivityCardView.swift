@@ -36,7 +36,7 @@ struct ActivityCardView: View {
         HStack(spacing: 15){
 			Text(emoji)
                 .font(.title2)
-                .padding(.all, 10)
+                .padding(10)
                 .background(
                     ZStack{
                         Color(.white)
@@ -60,7 +60,7 @@ struct ActivityCardView: View {
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
-                .foregroundStyle(.gray)
+                .foregroundStyle(.secondary)
                 
             }
             .frame(minWidth: 0, maxWidth: .infinity, maxHeight:.infinity, alignment:.leading)
@@ -105,7 +105,6 @@ struct CheckboxToggleStyle: ToggleStyle {
             ZStack {
                 Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
                     .imageScale(.large)
-                    .foregroundColor(.white)
                     .fontWeight(.medium)
                 configuration.label
             }

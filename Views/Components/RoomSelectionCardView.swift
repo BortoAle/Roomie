@@ -29,7 +29,7 @@ struct RoomSelectionCardView: View {
                         Color(getPastelColor(roomEmoji)).opacity(0.3)
                     }
                 )
-                .clipShape(Circle())
+				.clipShape(.circle)
             
             VStack (alignment: .leading){
                 Text(roomName)
@@ -51,7 +51,6 @@ struct RoomSelectionCardView: View {
             }, label: {
                 Image(systemName: isSelected ? "plus.circle.fill" : "plus.circle")
                     .font(.title2)
-                    .foregroundColor(.white)
             })
             
         }
@@ -61,10 +60,7 @@ struct RoomSelectionCardView: View {
         .background(
             RoundedRectangle(cornerRadius: 10)
                 .fill(.onboardingCardGray)
-            
-            
         )
-        
     }
 }
 

@@ -9,12 +9,10 @@ import SwiftUI
 import CloudKit
 
 struct ContentView: View {
-    @Environment(AppState.self) var appState
+    @Environment(AppState.self) private var appState
     
     @State private var showingMyRoommates = false
     @State private var openedSheetSize: Double = 0
-    
-    @AppStorage("isOnboarding") var isOnboarding: Bool?
     
     var body: some View {
         NavigationStack {
@@ -26,19 +24,16 @@ struct ContentView: View {
                 }
             }
             .toolbar{
-                ToolbarItem (placement: .navigationBarLeading){
-                    
-                    Button(action: { showingMyRoommates=true }, label: {
-                        Image(systemName: "house.lodge.fill")
+                ToolbarItem (placement: .navigationBarLeading) {
+					Button(action: {
+						showingMyRoommates = true
+					}, label: {
+						Label("Houses settings", systemImage: "house.lodge.fill")
+							.labelStyle(.iconOnly)
                             .fontWeight(.bold)
-                    }).tint(.white)
-                    
+                    })
                 }
             }
-        }
-        .navigationBarBackButtonHidden(true)
-        .onAppear(){
-            isOnboarding = false
         }
         .sheet(
             isPresented: $showingMyRoommates,

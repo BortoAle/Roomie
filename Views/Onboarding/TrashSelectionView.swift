@@ -10,6 +10,8 @@ import SwiftUI
 struct TrashSelectionView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(AppState.self) var appState
+	
+	@AppStorage("isOnboarding") var isOnboarding: Bool = true
     
     @State private var showingAddActivity = false
     @State private var openedSheetSize: Double = 0
@@ -20,7 +22,6 @@ struct TrashSelectionView: View {
     @State var amountOfCardsAdded: Int = 0
     
     var body: some View {
-        NavigationStack{
             VStack(alignment: .leading){
                 Text("What trash do you sort?")
                     .bold()
@@ -48,22 +49,18 @@ struct TrashSelectionView: View {
                 
                 RectangularButton(
                     text: amountOfCardsAdded == 0 ? "Skip for now" : "Continue",
-                    color: amountOfCardsAdded == 0 ? .namaraGray : .accentColor
+                    color: amountOfCardsAdded == 0 ? .namaraGray : .accentColor,
+					action: {
+						isOnboarding = false
+					}
                 )
                 .padding(.horizontal)
                 .padding(.top)
-                .overlay(
-                    NavigationLink(destination: ContentView()) {
-                        Color.clear
-                    }
-                )
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(
                 .neroGray
             )
-        }
-        .navigationBarBackButtonHidden(true)
         .sheet(
             isPresented: $showingAddActivity,
             content: {
