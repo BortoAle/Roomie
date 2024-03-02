@@ -20,9 +20,10 @@ struct CloudSharingView: UIViewControllerRepresentable {
     }
 
     func makeUIViewController(context: Context) -> UICloudSharingController {
-        share[CKShare.SystemFieldKey.title] = house.name
+		share[CKShare.SystemFieldKey.title] = "Join \(house.name ?? "shared house")"
         let controller = UICloudSharingController(share: share, container: container)
-        controller.modalPresentationStyle = .formSheet
+		controller.modalPresentationStyle = .formSheet
+		controller.availablePermissions = [.allowPrivate, .allowReadWrite]
         controller.delegate = context.coordinator
 		context.coordinator.house = house
         return controller
