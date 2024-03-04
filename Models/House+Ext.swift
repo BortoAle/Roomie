@@ -8,9 +8,9 @@
 import Foundation
 
 extension House {
-	static var mockup: House {
-		let house = House()
-		house.name = "Naples's home"
-		return house
-	}
+    static var mockup: House {
+        let house = House()
+        house.name = "Naples's home"
+        return house
+    }
 }

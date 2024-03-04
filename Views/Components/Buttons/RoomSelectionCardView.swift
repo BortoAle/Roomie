@@ -9,25 +9,22 @@ import SwiftUI
 
 struct RoomSelectionCardView: View {
     var body: some View {
-        
-        HStack{
-            ZStack{
+        HStack {
+            ZStack {
                 Circle()
-                    .frame(minWidth: 0,maxWidth: 50,minHeight:0,maxHeight:50)
-                
+                    .frame(minWidth: 0, maxWidth: 50, minHeight: 0, maxHeight: 50)
+
                 Image(systemName: "globe")
                     .imageScale(.large)
                     .foregroundStyle(.tint)
-                
             }.clipped()
-            
-            VStack (alignment: .leading){
+
+            VStack(alignment: .leading) {
                 Text("Kitchen")
                     .font(.headline)
                     .bold()
             }
-            .frame(minWidth: 0,maxWidth: .infinity, maxHeight:.infinity, alignment:.leading)
-            
+            .frame(minWidth: 0, maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
         }
         .frame(width: .infinity, height: 50)
         .padding(.horizontal, 20)
@@ -37,8 +34,6 @@ struct RoomSelectionCardView: View {
                 .padding(-10)
                 .padding(.horizontal, 20)
         )
-        
-        
     }
 }
 
