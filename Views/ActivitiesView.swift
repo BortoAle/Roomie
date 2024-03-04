@@ -25,7 +25,6 @@ struct ActivitiesView: View {
     private let share: CKShare?
     private var participants: [PersonNameComponents] {
         guard share != nil else { return [] }
-        #warning("Check on person without name")
         return share!.participants.compactMap({ participant in
             participant.userIdentity.nameComponents
         })
@@ -80,9 +79,9 @@ struct ActivitiesView: View {
                             myFilter.toggle()
                         }
                     }, label: {
-                        Label("Filter", systemImage: myFilter ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
+                        Image(systemName: myFilter ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
                             .fontWeight(.semibold)
-                            .labelStyle(.iconOnly)
+                            .accessibility(label: Text("Filter"))
                     })
                 }
 
@@ -90,9 +89,9 @@ struct ActivitiesView: View {
                     Button(action: {
                         showingAddActivity = true
                     }, label: {
-                        Label("Add Activity", systemImage: "plus")
+                        Image(systemName: "plus")
                             .fontWeight(.semibold)
-                            .labelStyle(.iconOnly)
+                            .accessibility(label: Text("Add Activity"))
                     })
                 }
             }
@@ -104,11 +103,11 @@ struct ActivitiesView: View {
     }
 }
 
-#Preview {
-    let appState = AppState()
-    appState.selectedHouse = .mockup
-
-    return ActivitiesView(house: .mockup)
-        .environment(\.managedObjectContext, CoreDataStack.preview.context)
-        .environment(appState)
-}
+// #Preview {
+//    let appState = AppState()
+//    appState.selectedHouse = .mockup
+//
+//    return ActivitiesView(house: .mockup)
+//        .environment(\.managedObjectContext, CoreDataStack.preview.context)
+//        .environment(appState)
+// }

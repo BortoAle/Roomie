@@ -28,9 +28,9 @@ struct ContentView: View {
                     Button(action: {
                         showingMyRoommates = true
                     }, label: {
-                        Label("Houses settings", systemImage: "house.lodge")
+                        Image(systemName: "house.lodge")
                             .fontWeight(.semibold)
-                            .labelStyle(.iconOnly)
+                            .accessibility(label: Text("Houses settings"))
                     })
                 }
             }

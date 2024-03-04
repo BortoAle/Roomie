@@ -28,8 +28,9 @@ struct HouseCardView: View {
                 VStack {
                     HStack {
                         Image(systemName: "house.fill")
+                            .fontWeight(.semibold)
                             .font(.title2)
-                            .foregroundStyle(.accent)
+                        //                            .foregroundStyle(.accent)
 
                         VStack(alignment: .leading) {
                             Text(house.name ?? "N/A")
@@ -49,7 +50,10 @@ struct HouseCardView: View {
                         Spacer()
 
                         Button(action: shareAction, label: {
-                            Label("Share", systemImage: "square.and.arrow.up")
+                            Image(systemName: "square.and.arrow.up")
+                                .fontWeight(.semibold)
+                                .accessibility(label: Text("Share"))
+                                .foregroundStyle(.accent)
                         })
                     }
                 }

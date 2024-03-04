@@ -77,8 +77,9 @@ struct MyRoommatesView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: { showingAddHouseSheet = true
                     }, label: {
-                        Label("Add House", systemImage: "plus")
+                        Image(systemName: "plus")
                             .fontWeight(.semibold)
+                            .accessibility(label: Text("Add House"))
                     })
                 }
             }
