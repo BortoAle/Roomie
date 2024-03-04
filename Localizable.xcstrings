@@ -1402,7 +1402,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Органіка"
+            "value" : "Упс, сталася помилка:"
           }
         }
       }
@@ -1424,7 +1424,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Упс, сталася помилка:"
+            "value" : "Органіка"
           }
         }
       }
