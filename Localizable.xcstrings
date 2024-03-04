@@ -34,6 +34,12 @@
             "state" : "translated",
             "value" : "Aggiungi"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Додати"
+          }
         }
       }
     },
@@ -49,6 +55,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi Attività"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Додайте завдання"
           }
         }
       }
@@ -66,6 +78,12 @@
             "state" : "translated",
             "value" : "Aggiungi Casa"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Додайте будинок"
+          }
         }
       }
     },
@@ -81,6 +99,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aggiungi i tuoi coinquilini"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Додайте ваших сусідів"
           }
         }
       }
@@ -98,6 +122,12 @@
             "state" : "translated",
             "value" : "Pianifica la gestione dei rifiuti"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Налаштуйте сміттєвий розклад"
+          }
         }
       }
     },
@@ -113,6 +143,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiedi al proprietario del gruppo di invitarti"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Попросіть автора вашої групи відправити вам запрошувальне посилання"
           }
         }
       }
@@ -130,6 +166,12 @@
             "state" : "translated",
             "value" : "Balcone"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Балкон"
+          }
         }
       }
     },
@@ -145,6 +187,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bagno"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ванна кімната"
           }
         }
       }
@@ -162,6 +210,12 @@
             "state" : "translated",
             "value" : "Annulla"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скасувати"
+          }
         }
       }
     },
@@ -177,6 +231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pulire balcone"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати на балконі"
           }
         }
       }
@@ -194,6 +254,12 @@
             "state" : "translated",
             "value" : "Pulire bagno"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати у ванній кімнаті"
+          }
         }
       }
     },
@@ -209,6 +275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pulire ripostiglio"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати в гардеробній"
           }
         }
       }
@@ -226,6 +298,12 @@
             "state" : "translated",
             "value" : "Pulire corridoio"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати в коридорі"
+          }
         }
       }
     },
@@ -241,6 +319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pulire zona pranzo"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати в обідній зоні"
           }
         }
       }
@@ -258,6 +342,12 @@
             "state" : "translated",
             "value" : "Pulire entrata"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати в приймальні"
+          }
         }
       }
     },
@@ -273,6 +363,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pulire ufficio"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати в домашньому офісі"
           }
         }
       }
@@ -290,6 +386,12 @@
             "state" : "translated",
             "value" : "Pulire cucina"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати на кухні"
+          }
         }
       }
     },
@@ -305,6 +407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pulire lavanderia"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати у пральні"
           }
         }
       }
@@ -322,6 +430,12 @@
             "state" : "translated",
             "value" : "Pulire salotto"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прибрати у вітальні"
+          }
         }
       }
     },
@@ -337,6 +451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chiudi"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрити"
           }
         }
       }
@@ -354,6 +474,12 @@
             "state" : "translated",
             "value" : "Ripostiglio"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гардеробна"
+          }
         }
       }
     },
@@ -369,6 +495,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Completa comunque"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завершити все одно"
           }
         }
       }
@@ -386,6 +518,12 @@
             "state" : "translated",
             "value" : "Continua"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продовжити"
+          }
         }
       }
     },
@@ -401,6 +539,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Corridoio"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Коридор"
           }
         }
       }
@@ -418,6 +562,12 @@
             "state" : "translated",
             "value" : "Crea una nuova casa"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Створити новий будинок"
+          }
         }
       }
     },
@@ -433,6 +583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Collabora creando una casa condivisa."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Створіть спільний простір для координації та співпраці"
           }
         }
       }
@@ -450,6 +606,12 @@
             "state" : "translated",
             "value" : "Continua creando gruppo"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Створити групу замість цього"
+          }
         }
       }
     },
@@ -465,6 +627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crea nuovo gruppo"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Створіть нову групу"
           }
         }
       }
@@ -482,6 +650,12 @@
             "state" : "translated",
             "value" : "Creato da %@"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Створено %@"
+          }
         }
       }
     },
@@ -497,6 +671,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Creato da te"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Створено вами"
           }
         }
       }
@@ -514,6 +694,12 @@
             "state" : "translated",
             "value" : "Crea e personalizza promemoria per gestire i rifiuti."
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Змініть та налаштуйте нагадування для вчасного викиду сміття"
+          }
         }
       }
     },
@@ -529,6 +715,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Giorni"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Активні дні"
           }
         }
       }
@@ -546,6 +738,12 @@
             "state" : "translated",
             "value" : "Elimina"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Видалити"
+          }
         }
       }
     },
@@ -561,6 +759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rimuovi attività"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Видалити завдання"
           }
         }
       }
@@ -578,6 +782,12 @@
             "state" : "translated",
             "value" : "Rimuovi casa"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Видалити будинок"
+          }
         }
       }
     },
@@ -593,6 +803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zona Pranzo"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обідня кімната"
           }
         }
       }
@@ -610,6 +826,12 @@
             "state" : "translated",
             "value" : "Vuoi eliminare definitivamente questa attività?"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бажаєте видалити це завдання повністю?"
+          }
         }
       }
     },
@@ -625,6 +847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vuoi eliminare definitivamente questa casa?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бажаєте видалити цей будинок повністю?"
           }
         }
       }
@@ -642,6 +870,12 @@
             "state" : "translated",
             "value" : "Fine"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зроблено"
+          }
         }
       }
     },
@@ -657,6 +891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifica"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Редагувати"
           }
         }
       }
@@ -674,6 +914,12 @@
             "state" : "translated",
             "value" : "Modifica attività"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Редагувати завдання"
+          }
         }
       }
     },
@@ -689,6 +935,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Modifica casa"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Редагувати будинок"
           }
         }
       }
@@ -706,6 +958,12 @@
             "state" : "translated",
             "value" : "Inserisci nome attività"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Редагувати назву завдання"
+          }
         }
       }
     },
@@ -721,6 +979,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inserisci nome casa"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введіть ім'я будинку"
           }
         }
       }
@@ -738,6 +1002,12 @@
             "state" : "translated",
             "value" : "Entrata"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приймальня"
+          }
         }
       }
     },
@@ -753,6 +1023,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Filtro"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фільтрувати"
           }
         }
       }
@@ -770,6 +1046,12 @@
             "state" : "translated",
             "value" : "Finestre"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скло"
+          }
         }
       }
     },
@@ -785,6 +1067,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ciao, mondo!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Привіт, світ"
           }
         }
       }
@@ -802,6 +1090,12 @@
             "state" : "translated",
             "value" : "Ufficio"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Домашній офіс"
+          }
         }
       }
     },
@@ -817,6 +1111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impostazioni case"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Налаштування будинків"
           }
         }
       }
@@ -834,6 +1134,12 @@
             "state" : "translated",
             "value" : "L'attività non è assegnata a te"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Це не ваше завдання"
+          }
         }
       }
     },
@@ -849,6 +1155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partecipa ad un gruppo"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приєднатися до групи"
           }
         }
       }
@@ -866,6 +1178,12 @@
             "state" : "translated",
             "value" : "Cucina"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кухня"
+          }
         }
       }
     },
@@ -881,6 +1199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lavanderia"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пральня"
           }
         }
       }
@@ -898,6 +1222,12 @@
             "state" : "translated",
             "value" : "Salotto"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вітальня"
+          }
         }
       }
     },
@@ -913,6 +1243,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metalli"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Метал"
           }
         }
       }
@@ -930,6 +1266,12 @@
             "state" : "translated",
             "value" : "Le mie case"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мої будинки"
+          }
         }
       }
     },
@@ -945,6 +1287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuova attività"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нове завдання"
           }
         }
       }
@@ -962,6 +1310,12 @@
             "state" : "translated",
             "value" : "Nuova casa"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новий будинок"
+          }
         }
       }
     },
@@ -977,6 +1331,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non hai case"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Будинків немає"
           }
         }
       }
@@ -994,6 +1354,12 @@
             "state" : "translated",
             "value" : "Indifferenziata"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Непереробне"
+          }
         }
       }
     },
@@ -1009,6 +1375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Olio"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Олія"
           }
         }
       }
@@ -1026,6 +1398,12 @@
             "state" : "translated",
             "value" : "Umido"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Органіка"
+          }
         }
       }
     },
@@ -1041,6 +1419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ops, c'è stato un errore:"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Упс, сталася помилка:"
           }
         }
       }
@@ -1058,6 +1442,12 @@
             "state" : "translated",
             "value" : "Carta"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Папір"
+          }
         }
       }
     },
@@ -1073,6 +1463,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plastica"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пластик"
           }
         }
       }
@@ -1090,6 +1486,12 @@
             "state" : "translated",
             "value" : "Riciclabile"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переробне"
+          }
         }
       }
     },
@@ -1099,6 +1501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restablecer página de inicio"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скинути екран реєстрації"
           }
         }
       }
@@ -1116,6 +1524,12 @@
             "state" : "translated",
             "value" : "Salva"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зберегти"
+          }
         }
       }
     },
@@ -1132,11 +1546,24 @@
             "state" : "translated",
             "value" : "Pianifica le pulizie"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зробити розклад прибирання"
+          }
         }
       }
     },
     "Sed cupidatat enim occaecat fugiat fugiat ea sint mollit proident ad laborum." : {
-
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sed cupidatat enim occaecat fugiat fugiat ea sint mollit proident ad laborum."
+          }
+        }
+      }
     },
     "Set up and organize a cleaning schedule for shared living spaces." : {
       "localizations" : {
@@ -1150,6 +1577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gestisci e organizza la pulizia della casa condivisa."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Налаштуйте та організуйте розклад прибирання для спільних місць."
           }
         }
       }
@@ -1167,6 +1600,12 @@
             "state" : "translated",
             "value" : "Condividi"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поділитися"
+          }
         }
       }
     },
@@ -1182,6 +1621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salta per ora"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поки пропустити"
           }
         }
       }
@@ -1199,6 +1644,12 @@
             "state" : "translated",
             "value" : "Bottone test"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тестувальна кнопка"
+          }
         }
       }
     },
@@ -1214,6 +1665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smaltire vetro"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Викинути скло"
           }
         }
       }
@@ -1231,6 +1688,12 @@
             "state" : "translated",
             "value" : "Smaltire metalli"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Викинути метал"
+          }
         }
       }
     },
@@ -1246,6 +1709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smaltire indifferenziata"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Викинути непереробне"
           }
         }
       }
@@ -1263,6 +1732,12 @@
             "state" : "translated",
             "value" : "Smaltire olii"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Викинути олію"
+          }
         }
       }
     },
@@ -1278,6 +1753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smaltire umido"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Викинути органіку"
           }
         }
       }
@@ -1295,6 +1776,12 @@
             "state" : "translated",
             "value" : "Smaltire carta"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Викинути папір"
+          }
         }
       }
     },
@@ -1310,6 +1797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smaltire plastica"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Викинути пластик"
           }
         }
       }
@@ -1327,6 +1820,12 @@
             "state" : "translated",
             "value" : "Smaltire riciclabile"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Викинути переробне"
+          }
         }
       }
     },
@@ -1342,6 +1841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oggi"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сьогодні"
           }
         }
       }
@@ -1359,6 +1864,12 @@
             "state" : "translated",
             "value" : "Benvenuto in Roomie"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ласкаво просимо до Roomie"
+          }
         }
       }
     },
@@ -1374,6 +1885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Che stanze hai?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Які кімнати ви маєте?"
           }
         }
       }
@@ -1391,6 +1908,12 @@
             "state" : "translated",
             "value" : "Quali rifiuti butti?"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Яке сміття ви сортуєте?"
+          }
         }
       }
     },
@@ -1406,6 +1929,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non puoi annullare questa azione"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ви не можете відмінити цю дію."
           }
         }
       }

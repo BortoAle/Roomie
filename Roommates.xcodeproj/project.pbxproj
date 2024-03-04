@@ -303,6 +303,7 @@
 				Base,
 				es,
 				it,
+				uk,
 			);
 			mainGroup = 6AEA95002B7E0C4E0063B760;
 			packageReferences = (
