@@ -11,7 +11,7 @@ struct ErrorScreenView: View {
 
     var body: some View {
         VStack {
-            Text("Oups, there was an error:")
+            Text("Ooups, there was an error:")
                 .fontWeight(.semibold)
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)

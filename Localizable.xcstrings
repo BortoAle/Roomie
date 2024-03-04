@@ -1013,6 +1013,22 @@
         }
       }
     },
+    "Ooups, there was an error:" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ups, hubo un error:"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ops, c'è stato un errore:"
+          }
+        }
+      }
+    },
     "Organic" : {
       "localizations" : {
         "es" : {
@@ -1025,22 +1041,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Umido"
-          }
-        }
-      }
-    },
-    "Oups, there was an error:" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ups, hubo un error:"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ops, c'è stato un errore:"
           }
         }
       }
