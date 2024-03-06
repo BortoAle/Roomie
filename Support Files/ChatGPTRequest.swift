@@ -18,7 +18,7 @@ func chatGPTRequest(inputPrompt: String, completion: @escaping (String?) -> Void
         return
     }
 
-    let openaiApiKey = "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"
+    let openaiApiKey = ProcessInfo.processInfo.environment["OPENAI_KEY"]
     let requestData: [String: Any] = [
         "model": "gpt-3.5-turbo-0125",
         "messages": [
@@ -30,7 +30,7 @@ func chatGPTRequest(inputPrompt: String, completion: @escaping (String?) -> Void
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-    request.addValue("Bearer \(openaiApiKey)", forHTTPHeaderField: "Authorization")
+    request.addValue("Bearer \(openaiApiKey!)", forHTTPHeaderField: "Authorization")
 
     guard let httpBody = try? JSONSerialization.data(withJSONObject: requestData) else {
         print("Error creating HTTP body")
