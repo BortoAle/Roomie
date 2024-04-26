@@ -9,7 +9,9 @@
 
 Roomie helps roommates who want to manage common chores by scheduling and assigning tasks. 
 
-<img src="https://github.com/BortoAle/Roomie/blob/3058384f8726371a34594cf532a7d736f17b9377/RoomieTemplate.png" alt="GIF">
+<a href="https://youtu.be/JYDTZkBXT7c" target="_blank">
+  <img src="https://github.com/BortoAle/Roomie/blob/3058384f8726371a34594cf532a7d736f17b9377/RoomieTemplate.png" alt="GIF">
+</a>
 
 ## Description
 SwiftUI, UIKit, CloudKit, CoreData, Collaborative Kit !!!!!
