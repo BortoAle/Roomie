@@ -9,7 +9,11 @@
 
 Roomie helps roommates who want to manage common chores by scheduling and assigning tasks. 
 
-<img src="https://github.com/BortoAle/Roomie/blob/3058384f8726371a34594cf532a7d736f17b9377/RoomieTemplate.png" alt="GIF">
+<a href="https://youtu.be/JYDTZkBXT7c" target="_blank">
+  <img src="https://github.com/BortoAle/Roomie/assets/59065228/10b74848-7574-42fc-999f-1f78feffdc14" alt="GIF">
+</a>
+
+[![](https://github.com/matt-novoselov/matt-novoselov/blob/34555effedede5dd5aa24ae675218d989e976cf6/Files/YouTube_Badge.svg)](https://youtu.be/JYDTZkBXT7c)
 
 ## Description
 SwiftUI, UIKit, CloudKit, CoreData, Collaborative Kit !!!!!
