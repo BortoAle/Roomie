@@ -20,7 +20,6 @@
 		1AA8A9482B8F4BC8009CE473 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */; };
 		1ACD8B412B873E0F004AAABE /* ColorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1ACD8B402B873E0F004AAABE /* ColorKit */; };
 		1ACD8B432B876267004AAABE /* PastelColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD8B422B876267004AAABE /* PastelColor.swift */; };
-		1AD726052B90D6E90096327C /* BitwiseShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD726042B90D6E90096327C /* BitwiseShift.swift */; };
 		1AEE37172B921CF7002D7899 /* HashTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE37162B921CF7002D7899 /* HashTask.swift */; };
 		1AF630A52B88A89D00FD9938 /* SheetAdaptiveSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF630A42B88A89D00FD9938 /* SheetAdaptiveSize.swift */; };
 		6A188DE52B888F02001B21F1 /* Roomie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A188DE32B888F02001B21F1 /* Roomie.xcdatamodeld */; };
@@ -66,7 +65,6 @@
 		1A4BB37C2B84BB1D003B40DC /* LoadTxtFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTxtFile.swift; sourceTree = "<group>"; };
 		1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1ACD8B422B876267004AAABE /* PastelColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelColor.swift; sourceTree = "<group>"; };
-		1AD726042B90D6E90096327C /* BitwiseShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitwiseShift.swift; sourceTree = "<group>"; };
 		1AEE37162B921CF7002D7899 /* HashTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTask.swift; sourceTree = "<group>"; };
 		1AF630A42B88A89D00FD9938 /* SheetAdaptiveSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAdaptiveSize.swift; sourceTree = "<group>"; };
 		6A188DE42B888F02001B21F1 /* Roomie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Roomie.xcdatamodel; sourceTree = "<group>"; };
@@ -80,7 +78,7 @@
 		6A3202012B8E4C8100CBDC36 /* Activity+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+Ext.swift"; sourceTree = "<group>"; };
 		6A777A092B93609F00C5E694 /* Roommates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Roommates.entitlements; path = Roommates/Roommates.entitlements; sourceTree = "<group>"; };
 		6AA03FC02B92426A0084F74B /* HouseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCardView.swift; sourceTree = "<group>"; };
-		6AEA95092B7E0C4E0063B760 /* Roommates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roommates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AEA95092B7E0C4E0063B760 /* Roomie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEA950C2B7E0C4E0063B760 /* RoommatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommatesApp.swift; sourceTree = "<group>"; };
 		6AEA950E2B7E0C4E0063B760 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AEA95102B7E0C4F0063B760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +117,7 @@
 			children = (
 				6A188E0F2B88A871001B21F1 /* ActivitiesView.swift */,
 				6AEA950E2B7E0C4E0063B760 /* ContentView.swift */,
+				1A1584CE2B852C9D00AFA7DB /* MyRoommatesView.swift */,
 				1A4BB3682B84B8B1003B40DC /* Onboarding */,
 				1A4BB3692B84B8B1003B40DC /* Components */,
 				1A4BB3742B84B9D7003B40DC /* Sheets */,
@@ -157,7 +156,6 @@
 				BE56914D2B7F536A0014EE9A /* AddActivityView.swift */,
 				BE5691512B836B280014EE9A /* EditActivityView.swift */,
 				BE5691532B836C6E0014EE9A /* NotYourActivityView.swift */,
-				1A1584CE2B852C9D00AFA7DB /* MyRoommatesView.swift */,
 				1A12325E2B90852500AAA83D /* AddHouseView.swift */,
 				1A2A6D7B2B908C8900C31165 /* EditHouseView.swift */,
 				6AA03FC02B92426A0084F74B /* HouseCardView.swift */,
@@ -172,7 +170,6 @@
 				1A4BB3782B84BB1D003B40DC /* ChatGPTRequest.swift */,
 				1A4BB37C2B84BB1D003B40DC /* LoadTxtFile.swift */,
 				1AF630A42B88A89D00FD9938 /* SheetAdaptiveSize.swift */,
-				1AD726042B90D6E90096327C /* BitwiseShift.swift */,
 				1AEE37162B921CF7002D7899 /* HashTask.swift */,
 			);
 			path = "Support Files";
@@ -221,7 +218,7 @@
 		6AEA950A2B7E0C4E0063B760 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AEA95092B7E0C4E0063B760 /* Roommates.app */,
+				6AEA95092B7E0C4E0063B760 /* Roomie.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,9 +246,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AEA95082B7E0C4E0063B760 /* Roommates */ = {
+		6AEA95082B7E0C4E0063B760 /* Roomie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AEA95172B7E0C4F0063B760 /* Build configuration list for PBXNativeTarget "Roommates" */;
+			buildConfigurationList = 6AEA95172B7E0C4F0063B760 /* Build configuration list for PBXNativeTarget "Roomie" */;
 			buildPhases = (
 				6AEA95052B7E0C4E0063B760 /* Sources */,
 				6AEA95062B7E0C4E0063B760 /* Frameworks */,
@@ -262,12 +259,12 @@
 			);
 			dependencies = (
 			);
-			name = Roommates;
+			name = Roomie;
 			packageProductDependencies = (
 				1ACD8B402B873E0F004AAABE /* ColorKit */,
 			);
 			productName = Roommates;
-			productReference = 6AEA95092B7E0C4E0063B760 /* Roommates.app */;
+			productReference = 6AEA95092B7E0C4E0063B760 /* Roomie.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -285,7 +282,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6AEA95042B7E0C4E0063B760 /* Build configuration list for PBXProject "Roommates" */;
+			buildConfigurationList = 6AEA95042B7E0C4E0063B760 /* Build configuration list for PBXProject "Roomie" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -304,7 +301,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AEA95082B7E0C4E0063B760 /* Roommates */,
+				6AEA95082B7E0C4E0063B760 /* Roomie */,
 			);
 		};
 /* End PBXProject section */
@@ -352,7 +349,6 @@
 			files = (
 				6AF5FEC62B8DEEF800BE5B60 /* AppDelegate.swift in Sources */,
 				1A4BB36F2B84B8B1003B40DC /* OnboardingCardView.swift in Sources */,
-				1AD726052B90D6E90096327C /* BitwiseShift.swift in Sources */,
 				1A4BB3812B84BB1D003B40DC /* LoadTxtFile.swift in Sources */,
 				1A1584CF2B852C9D00AFA7DB /* MyRoommatesView.swift in Sources */,
 				CC9C03742B860E21006FBDA2 /* TrashSelectionView.swift in Sources */,
@@ -523,9 +519,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Roommates/Roommates.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = ZPG82D37U3;
+				DEVELOPMENT_TEAM = GXDG2KXXXC;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -542,8 +538,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.undefined.Roomie;
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.novoselov.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -562,9 +558,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Roommates/Roommates.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = ZPG82D37U3;
+				DEVELOPMENT_TEAM = GXDG2KXXXC;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -581,8 +577,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.undefined.Roomie;
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.novoselov.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -597,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6AEA95042B7E0C4E0063B760 /* Build configuration list for PBXProject "Roommates" */ = {
+		6AEA95042B7E0C4E0063B760 /* Build configuration list for PBXProject "Roomie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AEA95152B7E0C4F0063B760 /* Debug */,
@@ -606,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AEA95172B7E0C4F0063B760 /* Build configuration list for PBXNativeTarget "Roommates" */ = {
+		6AEA95172B7E0C4F0063B760 /* Build configuration list for PBXNativeTarget "Roomie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AEA95182B7E0C4F0063B760 /* Debug */,

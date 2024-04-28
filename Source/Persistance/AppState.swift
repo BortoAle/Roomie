@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Track the currently selected house
 @Observable
 class AppState {
     var selectedHouse: House?

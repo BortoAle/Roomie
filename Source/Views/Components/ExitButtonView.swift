@@ -7,9 +7,9 @@
 
 import SwiftUI
 
+// Exit button is used to dismiss sheets
+// Should be used on top trailing corner of the sheet
 struct ExitButtonView: View {
-    @Environment(\.colorScheme) var colorScheme
-
     var body: some View {
         Image(systemName: "xmark")
             .imageScale(.small)

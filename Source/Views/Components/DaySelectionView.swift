@@ -7,23 +7,31 @@
 
 import SwiftUI
 
+// Structure to represent Day Data
 struct DayData: Hashable {
+    // Name of the weekday
     let name: String
+    // The day from which the week starts
     let initial: String
+    // Id of the weekday, where Sunday = 0, Monday = 1, and etc.
     let weekdayID: Int
 }
 
 struct DaySelectionView: View {
+    // An array of currently selected Days IDs
     @Binding var selectedDays: [Int]
 
+    // Get user's localized first day of the week as INT
     var firstWeekday: Int {
         Calendar.current.firstWeekday
     }
 
     var days: [DayData] {
+        // Load formatter
         let formatter = DateFormatter()
         formatter.locale = Locale.current
 
+        // Extract short localized symbols that represent first letter of the weekday
         let weekdaySymbols = Calendar.current.standaloneWeekdaySymbols
         let initialWeekdaySymbols = formatter.veryShortWeekdaySymbols!
 
@@ -38,6 +46,7 @@ struct DaySelectionView: View {
         })
     }
 
+    // Display weekday selection button for each weekday
     var body: some View {
         HStack {
             ForEach(days, id: \.self) { day in

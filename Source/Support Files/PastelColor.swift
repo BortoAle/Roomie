@@ -9,15 +9,20 @@ import Foundation
 import UIKit
 import ColorKit
 
+// Function to get a pastel color based on an emoji string
 func getPastelColor(_ emojiString: String) -> UIColor {
+    // Attempt to create an image from the emoji string
     if let emojiImage = imageFromEmojiString(emojiString, font: UIFont.systemFont(ofSize: 50), size: CGSize(width: 100, height: 100)) {
+        // Get dominant colors from the image
         if let dominantColors = getDominantColors(from: emojiImage) {
+            // Return the background color from the palette
             if let palette = ColorPalette(orderedColors: dominantColors, ignoreContrastRatio: true) {
                 return palette.background
             }
         }
     }
 
+    // If any step fails, return basic white color
     return .white
 }
 
@@ -37,8 +42,9 @@ func imageFromEmojiString(_ emojiString: String, font: UIFont, size: CGSize) -> 
     return image
 }
 
+// Function to extract dominant colors from the image
 func getDominantColors(from image: UIImage) -> [UIColor]? {
-    /** Try With PNG Data */
+    // Try With PNG Data
     if
         let pngData = image.pngData(),
         let pngImage = UIImage(data: pngData),
@@ -46,7 +52,7 @@ func getDominantColors(from image: UIImage) -> [UIColor]? {
         !colors.isEmpty {
         return colors
     }
-    /** Try With JPEG Data */
+    // Try With JPEG Data
     if
         let jpegData = image.jpegData(compressionQuality: 1),
         let jpegImage = UIImage(data: jpegData),
@@ -54,10 +60,11 @@ func getDominantColors(from image: UIImage) -> [UIColor]? {
         !colors.isEmpty {
         return colors
     }
-    /** Try With Original Image */
+    // Try With Original Image
     if let colors = try? image.dominantColors(with: .best, algorithm: .iterative), !colors.isEmpty {
         return colors
     }
-    /** Unfortuante!!! */
+
+    // If previous operation were unsuccessful, return error
     return nil
 }

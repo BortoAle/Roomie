@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Structure that represents room selection card for onboarding view
 class RoomSelectionCardViewModel {
     var roomSelectionCards = [
         RoomSelectionCard(roomName: String(localized: "Kitchen"), roomEmoji: "🍳", activityName: String(localized: "Clean Kitchen")),

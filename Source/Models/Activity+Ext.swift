@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Mockup for activity CloudKit sync test
 extension Activity {
     var weekdaysIndex: [Int] {
         var days = [Int].init()

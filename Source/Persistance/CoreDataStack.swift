@@ -9,9 +9,12 @@ import CloudKit
 import CoreData
 import Foundation
 
+// Class representing the CoreData stack
 final class CoreDataStack {
+    // Singleton instance of CoreDataStack
     static let shared = CoreDataStack()
 
+    // Initialization
     init() {}
 
     // A test configuration for SwiftUI previews
@@ -33,22 +36,25 @@ final class CoreDataStack {
 
         activity1.house = house1
         activity2.house = house2
-
         activity3.house = house2
 
         return controller
     }()
 
+    // Lazy initialization of persistent container
     lazy var persistentContainer: NSPersistentCloudKitContainer = {
         let container = NSPersistentCloudKitContainer(name: "Roomie")
 
+        // Get the URL for the document directory
         let dbURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 
+        // Create private persistent store
         let privateDesc = NSPersistentStoreDescription(url: dbURL.appendingPathComponent("model.sqlite"))
         privateDesc.configuration = "Private"
         privateDesc.cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(containerIdentifier: ckContainerID)
         privateDesc.cloudKitContainerOptions?.databaseScope = .private
 
+        // Create shared persistent store
         guard let shareDesc = privateDesc.copy() as? NSPersistentStoreDescription else {
             fatalError("Create shareDesc error")
         }
@@ -57,8 +63,10 @@ final class CoreDataStack {
         shareDescOption.databaseScope = .shared
         shareDesc.cloudKitContainerOptions = shareDescOption
 
+        // Set persistent store descriptions
         container.persistentStoreDescriptions = [privateDesc, shareDesc]
 
+        // Load persistent stores
         container.loadPersistentStores(completionHandler: { desc, err in
             if let err = err as NSError? {
                 fatalError("DB init error:\(err.localizedDescription)")
@@ -74,6 +82,7 @@ final class CoreDataStack {
             }
         })
 
+        // Configure view context
         container.viewContext.automaticallyMergesChangesFromParent = true
         container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
 
@@ -86,28 +95,35 @@ final class CoreDataStack {
         return container
     }()
 
-    let ckContainerID = "iCloud.com.undefined.Roomie"
+    // CloudKit container identifier
+    let ckContainerID = "iCloud.\(Bundle.main.bundleIdentifier ?? "Unknown")"
 
+    // CloudKit container
     var ckContainer: CKContainer {
         CKContainer(identifier: ckContainerID)
     }
 
+    // Private persistent store
     private var _privatePersistentStore: NSPersistentStore?
     var privatePersistentStore: NSPersistentStore {
         return _privatePersistentStore!
     }
 
+    // Shared persistent store
     private var _sharedPersistentStore: NSPersistentStore?
     var sharedPersistentStore: NSPersistentStore {
         return _sharedPersistentStore!
     }
 
+    // View context
     var context: NSManagedObjectContext {
         persistentContainer.viewContext
     }
 }
 
+// Extension for CoreDataStack
 extension CoreDataStack {
+    // Check if an object's ID is shared
     func isShared(objectID: NSManagedObjectID) -> Bool {
         var isShared = false
         if let persistentStore = objectID.persistentStore {
@@ -128,18 +144,22 @@ extension CoreDataStack {
         return isShared
     }
 
+    // Check if an object is shared
     func isShared(object: NSManagedObject) -> Bool {
         isShared(objectID: object.objectID)
     }
 
+    // Check if an object can be edited
     func canEdit(object: NSManagedObject) -> Bool {
         return persistentContainer.canUpdateRecord(forManagedObjectWith: object.objectID)
     }
 
+    // Check if an object can be deleted
     func canDelete(object: NSManagedObject) -> Bool {
         return persistentContainer.canDeleteRecord(forManagedObjectWith: object.objectID)
     }
 
+    // Check if the current user is the owner of a shared object
     func isOwner(object: NSManagedObject) -> Bool {
         guard isShared(object: object) else { return false }
         guard let share = try? persistentContainer.fetchShares(matching: [object.objectID])[object.objectID] else {
@@ -152,6 +172,7 @@ extension CoreDataStack {
         return false
     }
 
+    // Get the CKShare object for a shared house
     func getShare(_ house: House) -> CKShare? {
         guard isShared(object: house) else { return nil }
         guard let share = try? persistentContainer.fetchShares(matching: [house.objectID])[house.objectID] else {
@@ -163,7 +184,9 @@ extension CoreDataStack {
     }
 }
 
+// Additional functionalities for CoreDataStack
 extension CoreDataStack {
+    // Save changes in the view context
     func save() {
         if context.hasChanges {
             do {
@@ -174,6 +197,7 @@ extension CoreDataStack {
         }
     }
 
+    // Add a new house
     func addHouse() {
         let house = House(context: context)
         context.perform {
@@ -183,6 +207,7 @@ extension CoreDataStack {
         }
     }
 
+    // Add a new activity for a house
     func addActivity(_ house: House) {
         let activity = Activity(context: context)
         context.perform {
@@ -193,6 +218,7 @@ extension CoreDataStack {
         }
     }
 
+    // Delete a house
     func deleteHouse(_ house: House) {
         context.perform {
             self.context.delete(house)
@@ -200,6 +226,7 @@ extension CoreDataStack {
         }
     }
 
+    // Delete an activity
     func deleteActivity(_ activity: Activity) {
         context.perform {
             self.context.delete(activity)
@@ -207,14 +234,7 @@ extension CoreDataStack {
         }
     }
 
-    //    func changeMemoText(_ memo: Memo) {
-    //        context.perform {
-    //            let text = memo.text ?? ""
-    //            memo.text = text.appending(String(" \(Int.random(in: 0...9))"))
-    //            self.save()
-    //        }
-    //    }
-
+    // Delete a share
     func delShare(_ share: CKShare?) async {
         guard let share = share else { return }
         do {

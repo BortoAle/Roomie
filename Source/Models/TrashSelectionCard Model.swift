@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Structure that represents trash selection card for onboarding view
 struct TrashSelectionCard: Identifiable {
     var id = UUID()
     var trashName: String

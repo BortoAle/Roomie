@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Structure that represents trash selection card for onboarding view
 class TrashSelectionCardViewModel {
     var trashSelectionCards = [
         TrashSelectionCard(trashName: String(localized: "Plastic"), trashEmoji: "🥤", activityName: String(localized: "Throw Plastic")),

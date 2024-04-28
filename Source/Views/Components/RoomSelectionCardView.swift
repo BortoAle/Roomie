@@ -7,16 +7,26 @@
 
 import SwiftUI
 
+// Card that is used for onboarding to select initial rooms
 struct RoomSelectionCardView: View {
+    // A total amount of rooms that have already been selected by the user during the tutorial
     @Binding var amountOfCardsAdded: Int
+
+    // Property that controls if the current card is selected by the user
     @State var isSelected = false
 
+    // Name of the room
     var roomName: String
+
+    // Predefined emoji of the room
     var roomEmoji: String
+
+    // Action that happens after clicking on a plus icon
     var addAction: (() -> Void)?
 
     var body: some View {
         HStack(spacing: 15) {
+            // Emoji that describes Room
             Text(roomEmoji)
                 .font(.title2)
                 .padding(.all, 10)
@@ -29,6 +39,7 @@ struct RoomSelectionCardView: View {
                 )
                 .clipShape(.circle)
 
+            // Main title
             VStack(alignment: .leading) {
                 Text(roomName)
                     .font(.headline)
@@ -37,6 +48,7 @@ struct RoomSelectionCardView: View {
 
             Spacer()
 
+            // Button to perform add action
             Button(action: {
                 withAnimation {
                     isSelected.toggle()

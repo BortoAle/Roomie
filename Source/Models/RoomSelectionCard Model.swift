@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Structure that represents room selection card for onboarding view
 struct RoomSelectionCard: Identifiable {
     var id = UUID()
     var roomName: String

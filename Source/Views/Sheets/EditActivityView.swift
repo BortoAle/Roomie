@@ -7,13 +7,22 @@
 
 import SwiftUI
 
+// View for editing an existing activity
 struct EditActivityView: View {
+    // Environment variable to dismiss current sheet
     @Environment(\.dismiss) var dismiss
     @Environment(\.managedObjectContext) private var viewContext
 
+    // Property that controls if the alert is shown
     @State private var showingAlert = false
+
+    // Property that stores activity name from the textfield
     @State private var activityName: String = ""
+
+    // Property that stores currently selected days
     @State private var selectedDays: [Int] = []
+
+    // Variable that holds properties of an Activity
     let activity: Activity
 
     private let stack = CoreDataStack.shared
@@ -25,6 +34,7 @@ struct EditActivityView: View {
                     .font(.title2)
                     .fontWeight(.bold)
 
+                // Exit button to dismiss the current sheet
                 Button(action: dismiss.callAsFunction, label: {
                     ExitButtonView()
                 })
@@ -32,6 +42,7 @@ struct EditActivityView: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
             }
 
+            // Text field for entering activity name
             TextField("Enter activity name", text: $activityName)
                 .font(.title2)
                 .fontWeight(.bold)
@@ -44,6 +55,7 @@ struct EditActivityView: View {
                 .background(Color.secondary)
                 .padding(.bottom)
 
+            // View for selecting days
             VStack(alignment: .leading, spacing: 5) {
                 Text("Days active")
                     .font(.title2)
@@ -53,8 +65,10 @@ struct EditActivityView: View {
                     .padding(.bottom)
             }
 
+            // Button to delete the activity
             RectangularButton(text: "Delete Activity", color: .redButton, action: { showingAlert = true })
 
+            // Button to save changes
             RectangularButton(text: "Save", color: .accentColor, action: {
                 saveActivity()
             })
@@ -63,6 +77,8 @@ struct EditActivityView: View {
         }
         .padding()
         .padding(.top)
+
+        // Alert for confirming deletion
         .alert(isPresented: $showingAlert) {
             Alert(
                 title: Text("Do you want to delete this activity completely?"),
@@ -76,15 +92,18 @@ struct EditActivityView: View {
         }
     }
 
+    // Function to delete the activity
     private func deleteActivity() {
         stack.deleteActivity(activity)
         dismiss()
     }
 
+    // Function to save changes to the activity
     private func saveActivity() {
         withAnimation {
             activity.name = activityName
 
+            // Function to get emoji for the activity
             chatGPTRequest(inputPrompt: activityName) { result in
                 do {
                     let emoji = result?.prefix(1).lowercased() ?? "❌"
@@ -99,8 +118,6 @@ struct EditActivityView: View {
                 try viewContext.save()
                 dismiss()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }

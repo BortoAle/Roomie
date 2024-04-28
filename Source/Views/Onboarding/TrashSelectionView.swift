@@ -8,17 +8,30 @@
 import SwiftUI
 
 struct TrashSelectionView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-    @Environment(AppState.self) var appState
+    // Object Context for Core Data
+    @Environment(\.managedObjectContext)
+    private var viewContext
 
+    // Load current appState to track the currently selected house
+    @Environment(AppState.self)
+    private var appState
+
+    // Access App Storage value to control onboarding completion state
     @AppStorage("isOnboarding") var isOnboarding = true
 
+    // Sheet to add new item to the schedule
     @State private var showingAddActivity = false
+
+    // Control the size of currently opened sheet
     @State private var openedSheetSize: Double = 0
 
+    // The name of activity to be added to the sheet element
     @State private var suggestedAddActivityName: String = ""
 
+    // Load predefined cards from the view model
     var viewModel = TrashSelectionCardViewModel()
+
+    // Track an amount of cards that user has selected
     @State var amountOfCardsAdded: Int = 0
 
     var body: some View {
@@ -28,6 +41,7 @@ struct TrashSelectionView: View {
                 .font(.title2)
                 .padding()
 
+            // Display add card for each activity suggestions
             ScrollView {
                 VStack {
                     ForEach(viewModel.trashSelectionCards) {
@@ -46,10 +60,12 @@ struct TrashSelectionView: View {
                 .padding(.horizontal)
             }
 
+            // Button to skip this tutorial element
             RectangularButton(
                 text: amountOfCardsAdded == 0 ? "Skip for now" : "Continue",
                 color: amountOfCardsAdded == 0 ? .namaraGray : .accentColor,
                 action: {
+                    // Finish onboarding
                     isOnboarding = false
                 }
             )
@@ -60,6 +76,8 @@ struct TrashSelectionView: View {
         .background(
             .neroGray
         )
+
+        // Present sheet to add new activity to the schedule
         .sheet(
             isPresented: $showingAddActivity,
             content: {

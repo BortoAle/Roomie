@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Mockup for house CloudKit sync test
 extension House {
     static var mockup: House {
         let house = House()
