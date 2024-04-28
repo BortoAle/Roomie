@@ -10,6 +10,7 @@
 		1A12325F2B90852500AAA83D /* AddHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A12325E2B90852500AAA83D /* AddHouseView.swift */; };
 		1A1584C82B85161E00AFA7DB /* ActivityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1584C72B85161E00AFA7DB /* ActivityCardView.swift */; };
 		1A1584CF2B852C9D00AFA7DB /* MyRoommatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1584CE2B852C9D00AFA7DB /* MyRoommatesView.swift */; };
+		1A28056E2BDEE1B800AB2E15 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1A28056D2BDEE1B800AB2E15 /* Config.xcconfig */; };
 		1A2A6D7C2B908C8900C31165 /* EditHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2A6D7B2B908C8900C31165 /* EditHouseView.swift */; };
 		1A4BB36F2B84B8B1003B40DC /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB36B2B84B8B1003B40DC /* OnboardingCardView.swift */; };
 		1A4BB3702B84B8B1003B40DC /* JoinGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BB36C2B84B8B1003B40DC /* JoinGroupView.swift */; };
@@ -56,6 +57,7 @@
 		1A12325E2B90852500AAA83D /* AddHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHouseView.swift; sourceTree = "<group>"; };
 		1A1584C72B85161E00AFA7DB /* ActivityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCardView.swift; sourceTree = "<group>"; };
 		1A1584CE2B852C9D00AFA7DB /* MyRoommatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoommatesView.swift; sourceTree = "<group>"; };
+		1A28056D2BDEE1B800AB2E15 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		1A2A6D7B2B908C8900C31165 /* EditHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHouseView.swift; sourceTree = "<group>"; };
 		1A4BB36B2B84B8B1003B40DC /* OnboardingCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
 		1A4BB36C2B84B8B1003B40DC /* JoinGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGroupView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		6AEA95002B7E0C4E0063B760 = {
 			isa = PBXGroup;
 			children = (
+				1A28056D2BDEE1B800AB2E15 /* Config.xcconfig */,
 				6A188E0A2B8890A1001B21F1 /* Info.plist */,
 				6AEA95102B7E0C4F0063B760 /* Assets.xcassets */,
 				1AA8A9472B8F4BC8009CE473 /* Localizable.xcstrings */,
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AEC3B342B939C2800987D38 /* .swiftlint.yml in Resources */,
+				1A28056E2BDEE1B800AB2E15 /* Config.xcconfig in Resources */,
 				1A4BB3802B84BB1D003B40DC /* ChatGPT_Instruction_Text_To_Emoji.txt in Resources */,
 				6AEA95112B7E0C4F0063B760 /* Assets.xcassets in Resources */,
 				1AA8A9482B8F4BC8009CE473 /* Localizable.xcstrings in Resources */,
@@ -514,6 +518,7 @@
 		};
 		6AEA95182B7E0C4F0063B760 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A28056D2BDEE1B800AB2E15 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -553,6 +558,7 @@
 		};
 		6AEA95192B7E0C4F0063B760 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A28056D2BDEE1B800AB2E15 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

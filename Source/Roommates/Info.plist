@@ -4,6 +4,8 @@
 <dict>
 	<key>CKSharingSupported</key>
 	<true/>
+	<key>OpenAiApiKey</key>
+	<string>$(OPEN_AI_API_KEY)</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

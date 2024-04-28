@@ -21,10 +21,15 @@ func chatGPTRequest(inputPrompt: String, completion: @escaping (String?) -> Void
         return
     }
 
-    // Retrieve OpenAI API key from environment variables
-    //    let openaiApiKey = ProcessInfo.processInfo.environment["OPENAI_KEY"]
-    // MARK: Finish before submitting
-    let openaiApiKey = ""
+    guard let infoDictionary: [String: Any] = Bundle.main.infoDictionary else {
+        print("Error: Failed to access the info dictionary of the main bundle.")
+        return
+    }
+
+    guard let openaiApiKey: String = infoDictionary["OpenAiApiKey"] as? String else {
+        print("Error: Failed to retrieve the API key from the info dictionary.")
+        return
+    }
 
     // Prepare request data
     let requestData: [String: Any] = [
