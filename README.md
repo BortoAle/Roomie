@@ -23,11 +23,18 @@ SwiftUI, UIKit, CloudKit, CoreData, Collaborative Kit !!!!!
 - Xcode 15.0+
 
 ## Installation
-1. Open Xcode.
-2. Click on **"Clone Git Repository"**.
-3. Paste the following URL: `https://github.com/BortoAle/Roomie.git`
-4. Click **"Clone"**.
-5. Build and run the project in Xcode.
+1. Clone repository using the following URL: `https://github.com/BortoAle/Roomie.git`
+2. Create Environment File:
+   - Create a file named `.env` in the root directory of the source folder.
+   - Use the provided `.env.example` file as a template.
+3. Replace the placeholder values with your specific configuration:
+   - OPEN_AI_API_KEY: Your OpenAI API key obtained from [OpenAI website](https://platform.openai.com)
+4. In the Signing & Capabilities of the project create a new iCloud Container. The iCloud Container's bundle identifier should be the same as bundle identifier of the app.
+
+   Example app bundle identifier: `com.example.Roomie`
+
+   Example iCloud Container bundle identifier: `iCloud.com.example.Roomie`
+6. Build and run the project in Xcode.
 
 ## Dependencies
 - [ColorKit](https://github.com/Boris-Em/ColorKit) - UIKit library to find the dominant colors of an image.
