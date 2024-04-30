@@ -32,7 +32,7 @@ Roomie includes full localization for four languages:
 - 🇮🇹 Italian
 - 🇺🇦 Ukrainian
 
-Our app incorporates accessibility features to assist our users, including support for VoiceOver and light mode.
+Our app incorporates accessibility features to assist our users, including support for VoiceOver and light / dark modes.
 
 ## Requirements
 - iOS 17.0+
