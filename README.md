@@ -7,7 +7,7 @@
 
 <img src="https://github.com/matt-novoselov/matt-novoselov/blob/fa4553c1e2ba92cb77bf1d11d272d0c1ad5de138/Files/ios17.svg" alt="SwiftUI" style="height: 30px"> <img src="https://github.com/matt-novoselov/matt-novoselov/blob/fa4553c1e2ba92cb77bf1d11d272d0c1ad5de138/Files/SwiftUI.svg" alt="SwiftUI" style="height: 30px"> <img src="https://github.com/matt-novoselov/matt-novoselov/blob/fa4553c1e2ba92cb77bf1d11d272d0c1ad5de138/Files/UIKit.svg" alt="SwiftUI" style="height: 30px"> <img src="https://github.com/matt-novoselov/matt-novoselov/blob/fa4553c1e2ba92cb77bf1d11d272d0c1ad5de138/Files/CloudKit.svg" alt="SwiftUI" style="height: 30px"> <img src="https://github.com/matt-novoselov/matt-novoselov/blob/79c191afd3a463f993688531e61d04f7e41002bd/Files/CoreData.svg" alt="SwiftUI" style="height: 30px">
 
-Roomie helps roommates who want to manage common chores by scheduling and assigning tasks. 
+Roomie is an app designed to help roommates with their daily routines. Just invite all of your roommates to the shared group, and Roomie will assist you in organizing and managing common chores by automatically scheduling and assigning tasks. Every member of the group can modify or add new activities, and they will automatically be synced.
 
 <a href="https://youtu.be/JYDTZkBXT7c" target="_blank">
   <img src="https://github.com/BortoAle/Roomie/assets/59065228/10b74848-7574-42fc-999f-1f78feffdc14" alt="GIF">
@@ -16,6 +16,9 @@ Roomie helps roommates who want to manage common chores by scheduling and assign
 [![](https://github.com/matt-novoselov/matt-novoselov/blob/34555effedede5dd5aa24ae675218d989e976cf6/Files/YouTube_Badge.svg)](https://youtu.be/JYDTZkBXT7c)
 
 ## Description
+
+**_“Good roommates transform living spaces into havens of harmony and shared joy.”_**
+
 Roomie was built using **SwiftUI** to create a visual interface. **UIKit**, along with **ColorKit** (external library), is used to analyze the color content of images and extract the dominant colors from emojis.
 
 **CoreData**, along with **CloudKit**, is used to store and synchronize activities and facilitate collaboration between different participants in the house. Roomie is integrated into Apple’s ecosystem, allowing you to invite your roommates by copying the link to the created house or by sending an invitation to the iMessage group, so that everyone in the group will automatically receive it. All participants in the house can mark activities as completed, modify and adjust schedules for activities, as well as create new activities. You can create several separate houses (groups) with different participants to manage your activities.
@@ -32,7 +35,7 @@ Roomie includes full localization for four languages:
 - 🇮🇹 Italian
 - 🇺🇦 Ukrainian
 
-Our app incorporates accessibility features to assist our users, including support for VoiceOver and light / dark modes.
+Roomie incorporates accessibility features to assist our users, including support for VoiceOver and light / dark modes.
 
 ## Requirements
 - iOS 17.0+
