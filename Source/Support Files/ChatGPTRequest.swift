@@ -82,7 +82,7 @@ func chatGPTRequest(inputPrompt: String, completion: @escaping (String?) -> Void
                     completion(nil)
                 }
             } else {
-                print("Invalid response format")
+                print("Invalid response format. Make sure you have provided a valid OpenAI API key.")
                 completion(nil)
             }
         } catch {
