@@ -34,6 +34,10 @@ struct ActivityCardView: View {
         self.share = stack.getShare(activity.house!) // Retrieve share information
     }
 
+    private var responsiblePerson: String {
+        hashTaskExecutor(taskName: activity.name ?? "", roommatesList: participants)
+    }
+
     var body: some View {
         HStack(spacing: 15) {
             // Display the emoji representing the activity
@@ -50,12 +54,14 @@ struct ActivityCardView: View {
                 )
                 .clipShape(Circle())
                 .saturation(activity.isCompleted ? 0.5 : 1)
+                .accessibilityHidden(true)
 
             VStack(alignment: .leading) {
                 // Display the name of the activity
                 Text(activity.name ?? "")
                     .font(.headline)
                     .fontWeight(.bold)
+                    .accessibilitySortPriority(2)
 
                 HStack(spacing: 5) {
                     // Display icon indicating participants
@@ -63,11 +69,14 @@ struct ActivityCardView: View {
                         .imageScale(.small)
 
                     // Display the hash of task executor based on activity name and participants
-                    Text(hashTaskExecutor(taskName: activity.name ?? "", roommatesList: participants))
+                    Text(responsiblePerson)
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
                 .foregroundStyle(.secondary)
+                .accessibilitySortPriority(1)
+                .accessibilityElement()
+                .accessibilityLabel("Person responsible: \(responsiblePerson)")
             }
             .frame(minWidth: 0, maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
 
@@ -79,6 +88,8 @@ struct ActivityCardView: View {
                     activity.isCompleted = completionState
                 }))
                 .toggleStyle(CheckboxToggleStyle()) // Apply custom toggle style
+                .accessibilitySortPriority(0)
+                .accessibilityLabel(activity.isCompleted ? "Activity is completed" : "Activity is not completed")
             }
         }
         // Reduce opacity of completed activities

@@ -21,6 +21,12 @@
         }
       }
     },
+    "Activity is completed" : {
+
+    },
+    "Activity is not completed" : {
+
+    },
     "Add" : {
       "localizations" : {
         "es" : {
@@ -1452,6 +1458,9 @@
           }
         }
       }
+    },
+    "Person responsible: %@" : {
+
     },
     "Plastic" : {
       "localizations" : {

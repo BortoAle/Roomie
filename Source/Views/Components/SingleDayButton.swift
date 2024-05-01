@@ -46,6 +46,7 @@ struct SingleDayButton: View {
                         .fontWeight(.bold)
                 )
         }
+        .accessibilityLabel(day.name)
     }
 }
 
