@@ -21,12 +21,19 @@ Roomie is an app designed to help roommates with their daily routines. Just invi
 
 Roomie was built using **SwiftUI** to create a visual interface. **UIKit**, along with **ColorKit** (external library), is used to analyze the color content of images and extract the dominant colors from emojis.
 
-**CoreData**, along with **CloudKit**, is used to store and synchronize activities and facilitate collaboration between different participants in the house. Roomie is integrated into Apple’s ecosystem, allowing you to invite your roommates by copying the link to the created house or by sending an invitation to the iMessage group, so that everyone in the group will automatically receive it. All participants in the house can mark activities as completed, modify and adjust schedules for activities, as well as create new activities. You can create several separate houses (groups) with different participants to manage your activities.
+### Invite roommates to the group
+**CoreData**, along with **CloudKit**, is used to store and synchronize activities and facilitate collaboration between different participants in the house. Roomie is integrated into Apple’s ecosystem, allowing you to invite your roommates by copying the link to the created house or by sending an invitation to the iMessage group, so that everyone in the group will automatically receive it. 
 
+### Add and manage common chores
+All participants in the house can mark activities as completed, modify and adjust schedules for activities, as well as create new activities. You can create several separate houses (groups) with different participants to manage your activities.
+
+### AI powered emoji matching
 The app uses **OpenAI’s** `gpt-3.5-turbo-0125` API to automatically determine an appropriate emoji that would represent the activity's name. For example:
 
 - "Throw Plastic" → 🥤
 - "Water Flowers" → 🌸
+
+<br>
 
 Roomie includes full localization for four languages:
 
@@ -34,6 +41,8 @@ Roomie includes full localization for four languages:
 - 🇪🇸 Spanish
 - 🇮🇹 Italian
 - 🇺🇦 Ukrainian
+
+<br>
 
 Roomie incorporates accessibility features to assist our users, including support for VoiceOver and light / dark modes.
 
